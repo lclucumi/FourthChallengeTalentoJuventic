@@ -1,0 +1,100 @@
+{
+  "objMenu": [
+    {
+      "id": 1,
+      "plato": "Lobster Bisquet",
+      "ingredientes": "langosta con cebolla, apio, laurel, perejil, ajo y tomate frito.",
+      "descripcion": "Lobster Bisque o sopa de langosta, una clásica sopa cremosa y suave, altamente sazonada, hecha de langosta y aromáticos, plato perfecto para toda ocasión y que se sirve como primer plato. Una indulgencia de ensueño de una experiencia gastronómica de cinco estrellas.",
+      "precio": "9.98",
+      "cantidad": 0
+    },
+    {
+      "id": 2,
+      "plato": "Bread barrel",
+      "ingredientes": "Pan artesanal.",
+      "descripcion": "Pan artesanal, sin corteza, acabado de cocinar y luego expuesto a la parilla, perfecto para degustar con todo tipo de carnes asadas o a la plancha.",
+      "precio": "6.95",
+      "cantidad": 0
+    },
+    {
+      "id": 3,
+      "plato": "Crab Cake",
+      "ingredientes": "Carne de cangrejo, huevo, cebolla, ajo, pastas.",
+      "descripcion": "Crab Cake o Pastel de cangrejo, un delicioso plato compuesto por carne de cangrejo, pastas al punto, y sazonado de manera que puedas disfrutar de esta comida de mar en todo su esplendor.",
+      "precio": "7.95",
+      "cantidad": 0
+    },
+    {
+      "id": 4,
+      "plato": "Caesar Selections",
+      "ingredientes": "Lechuga italiana, pastas, jitomates, queso, vinagre.",
+      "descripcion": "La Caesar Selection es una ensalada tipica italiana, plato ligero, preparada con todos sus ingredientes totalmente frescos, permitiendo conservar todos sus sabores y degustarlos totalmente, perfecto plato veraniego para los amantes de la comida.",
+      "precio": "8.95",
+      "cantidad": 0
+    },
+    {
+      "id": 5,
+      "plato": "Bandeja paisa",
+      "ingredientes": "Frijoles, arroz blanco, carne en polvo, chorizo, tajadas de platano, huevo frito, aguacate, arepa.",
+      "descripcion": "Delicioso plato típico representativo de Colombia, propio de la gastronomía antioqueña, conformado por una gran cantidad de ingredientes completamente deliciosos para el paladar de cualquier persona, y que te dejara completamente satisfecho de principio a fin.",
+      "precio": "14.95",
+      "cantidad": 0
+    },
+    {
+      "id": 6,
+      "plato": "Cocido Boyacense",
+      "ingredientes": "Carne de cerdo, carne de res, pollo, cubios, chaguas, frijol verde, mazorca.",
+      "descripcion": "Considerado un plato típico de Colombia, proveniente del Altiplano cundiboyacense, como lo refiere su nombre, proviene de la época de la colonia, hecho a base de diferentes carnes y túberculos, haciéndolo una delicia excepcional.",
+      "precio": "9.99",
+      "cantidad": 0
+    },
+    {
+      "id": 7,
+      "plato": "Tuscan Grilled",
+      "ingredientes": "Chuletón de ternera, aceite de oliva virgen, pimienta negra molida, romero fresco, ajo.",
+      "descripcion": "Delicioso asado a la parrilla, bañado en adobo de aceite de oliva virgen, romero y ajo, constituyendo un hermoso sabor y perfecto para cualquier comida.",
+      "precio": "9.95",
+      "cantidad": 0
+    },
+    {
+      "id": 8,
+      "plato": "Mozzarella Stick",
+      "ingredientes": "Queso mozarella, salsa de tomate, salsa de ciruela.",
+      "descripcion": "Deliciosos palitos empanados rellenos de queso mozarella, perfectos como aperitivos de entrada para cualquier comida.",
+      "precio": "4.95",
+      "cantidad": 0
+    },
+    {
+      "id": 9,
+      "plato": "Greek Salad",
+      "ingredientes": "Tomate, pepino, pimiento, cebolla roja, sal, pimienta roja, orégano, aceite de oliva.",
+      "descripcion": "Exquisita, ligera y nutritiva ensalada griega elaborada con todos los ingredientes característicos de este país, contiene menos de 360 calorías, la cual es un plato perfecto para complementar cualquier otro plato que prefieras.",
+      "precio": "8.95",
+      "cantidad": 0
+    },
+    {
+      "id": 10,
+      "plato": "Lasagna",
+      "ingredientes": "Pasta, carne al gusto (pollo, cerdo, mixta), tómate, cebolla, aceite de oliva.",
+      "descripcion": "Lasagna o lasaña, delicioso plato típico de la cocina italiana, elaborado a partir de finas láminas de pasta rellanadas con carne, tómate, verduras, cebollas y cocinado en aceite de oliva, tiene combinación de sabores perfecta y que satisface completamente a todo aquel que la disfrute.",
+      "precio": "9.95",
+      "cantidad": 0
+    },
+    {
+      "id": 11,
+      "plato": "Pizza",
+      "ingredientes": "Pan horneado, queso mozarella, salsa de tomate, salami, tiras de cebolla, jamón.",
+      "descripcion": "Deliciosa pizza italiana crujiente, servida caliente, con ingredientes al gusto y perfecta para compartir para el disfrute de todos.",
+      "precio": "11.95",
+      "cantidad": 0
+    },
+    {
+      "id": 12,
+      "plato": "Ajiaco santafereño",
+      "ingredientes": "Pollo, guascas, papa sabanera, papa pastusa, papa criolla, arracacha, cebolla, ajo, mazorca.",
+      "descripcion": "Plato típico de Santa Fe de Bogotá, una sopa deliciosa por su combinación de tubérculos y pollo, rememorando la herencia de sabores de la comida indígena y española. Una total exquisitez.",
+      "precio": "6.95",
+      "cantidad": 0
+    }
+  ]
+}

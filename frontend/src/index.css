@@ -1,0 +1,681 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+header .facebook,
+.facebook:hover,
+.instagram,
+.instagram:hover,
+.twitter,
+.twitter:hover {
+  color: #ffb03b;
+  font-size: 24px;
+}
+
+.bxs-x-circle,
+.bxs-x-circle:hover {
+  color: #f05252;
+  font-size: 24px;
+}
+
+header .nav-link {
+  color: #d6d6d6;
+}
+
+header .car-icon {
+  color: #b8b8b8;
+  font-size: 24px;
+  text-align: right;
+}
+
+.user {
+  color: #d6d6d6;
+  font-size: 28px;
+  padding-right: 22px;
+}
+
+.user:hover {
+  color: #ffb03b;
+  font-size: 28px;
+  padding-right: 22px;
+}
+/*--------------------------------------------------------------
+# Sección de inicio
+--------------------------------------------------------------*/
+#indexCarousel .carousel-caption {
+  position: absolute;
+  top: 40%;
+  bottom: 1.25rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  font-size: 20px;
+  text-align: left;
+  font-weight: 300;
+}
+
+#indexCarousel .carousel-caption h1 {
+  font-family: "Dancing Script", cursive;
+  color: rgb(255, 179, 86);
+}
+
+#indexCarousel .carousel-caption h1 {
+  font-family: "Dancing Script", cursive;
+  color: rgb(255, 179, 86);
+}
+
+#indexCarousel .carousel-caption p {
+  color: floralwhite;
+}
+
+#indexCarousel .carousel-item {
+  background-color: #000;
+}
+
+#indexCarousel img {
+  opacity: 0.29;
+}
+
+/*--------------------------------------------------------------
+# Sección de us
+--------------------------------------------------------------*/
+#imagen {
+  padding: 40px 0 40px;
+  justify-content: center;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#imagen .imagen-about {
+  padding-bottom: 10px;
+}
+
+#imagen h3 {
+  font-family: "Dancing Script", cursive;
+}
+
+#imagen .text-ul {
+  color: #000;
+}
+
+#us i {
+  color: #ffb03b;
+}
+
+#us .us-info {
+  text-align: justify;
+}
+
+#us .btn-menu {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+#us .btn-outline-warning {
+  color: #000;
+  background-color: transparent;
+  border-color: #0c0900;
+}
+
+#us .btn-outline-warning:hover {
+  color: #fff;
+  background-color: #ffb03b;
+  border-color: #ffbf3b;
+}
+
+#us .us-distance {
+  text-align: justify;
+}
+
+#us .section-title {
+  padding-top: 80px;
+  color: #000000;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+/*--------------------------------------------------------------
+# Sección de menu
+--------------------------------------------------------------*/
+#left_column {
+  width: 36%;
+  float: left;
+  margin: 0.2rem;
+  padding: 0.2rem;
+}
+
+#right_column {
+  width: 36%;
+  float: left;
+  margin: 0.2rem;
+  padding: 0.2rem;
+}
+
+#titleMenuModal {
+  border: none;
+  background-color: transparent;
+}
+
+#menu {
+  padding: 104px 0 80px 0;
+  width: 100%;
+  background-image: url("../src/images/menu/menu-bg.png");
+}
+
+#menu i {
+  color: #f05252;
+  font-size: 40px;
+}
+
+#menu .section-title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#menu h2 {
+  font-family: "Dancing Script", cursive;
+}
+
+#menu h2,
+h6 {
+  color: #000;
+}
+
+.ingredient {
+  color: #ffb03b;
+}
+
+#menu .modal span,
+h5 {
+  color: #ffb03b;
+}
+
+#menu p {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #8b8b8a;
+}
+
+#menu h5 p {
+  padding-left: 10px;
+  float: left;
+}
+
+#menu h6 {
+  float: right;
+}
+
+#menu .btn-menu-section {
+  display: flex;
+  justify-content: center;
+}
+
+#menu .details {
+  padding-top: 30px;
+  text-align: justify;
+}
+
+#menu .id-food {
+  float: left;
+  margin: 0 0 0 6px;
+}
+
+#menu .cantidadMenu {
+  float: left;
+  margin-left: 12px;
+  margin-bottom: 10px;
+}
+
+#menu .form-control {
+  width: 16%;
+}
+/*--------------------------------------------------------------
+# Destacados
+--------------------------------------------------------------*/
+#destacados h2,
+h3 {
+  font-family: "Dancing Script", cursive;
+}
+
+#destacados .section-title {
+  padding-top: 40px;
+  padding-bottom: 18px;
+  text-align: center;
+}
+
+#destacados .btn-menu {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+#destacados .btn-outline-warning {
+  color: #000;
+  background-color: transparent;
+  border-color: #0c0900;
+}
+
+#destacados .details {
+  padding-top: 30px;
+  text-align: justify;
+}
+
+#destacados h3 {
+  text-align: center;
+}
+
+#destacados .btn-outline-warning:hover {
+  color: #fff;
+  background-color: #ffb03b;
+  border-color: #ffbf3b;
+}
+
+#destacados h2 {
+  color: #000;
+}
+
+#destacados span {
+  color: #ffb03b;
+}
+
+#destacados .nav-pills {
+  text-align: right;
+  padding-top: 30px;
+}
+
+#destacados .image-bg {
+  background-image: url("../src/images/feature-bg.png");
+  padding-bottom: 30px;
+}
+
+.nav-pills {
+  background-color: #fff;
+  color: #000;
+}
+
+.nav-pills > li > a {
+  color: #000;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #ffb03b;
+  background-color: #fff;
+}
+
+.nav-pills > li > a:hover {
+  border: medium none;
+  border-radius: 0;
+  color: #ffb03b;
+}
+
+.special1 .special2 .special3 .special4 .special5 .special6 {
+  margin-bottom: 10px;
+}
+
+/*--------------------------------------------------------------
+# Login
+--------------------------------------------------------------*/
+#headerLogin {
+  color: #ffb03b;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+#loginCard {
+  padding-top: 110px;
+  padding-bottom: 110px;
+  background-image: "../src/images/events-bg.jpg";
+}
+
+#sigIn {
+  padding-top: 40px;
+}
+
+#passLogin {
+  padding-top: 20px;
+}
+/*--------------------------------------------------------------
+# Testimonios
+--------------------------------------------------------------*/
+#testimonio {
+  text-align: center;
+}
+
+#testimonio .comilla {
+  font-size: 140%;
+}
+
+#testimonio #carouselTestimonio .carousel-item {
+  height: 300px;
+}
+
+#testimonio .carousel-caption {
+  position: absolute;
+  top: 10%;
+  padding-top: 0.15rem;
+  color: #fff;
+  text-align: center;
+}
+
+#testimonio .carousel-caption h1 {
+  font-family: "Dancing Script", cursive;
+  color: rgb(252, 152, 31);
+}
+
+#testimonio .carousel-caption h4 {
+  font-family: "Dancing Script", cursive;
+  color: rgb(226, 225, 225);
+}
+
+#testimonio .carousel-caption p {
+  color: floralwhite;
+  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+#testimonio .testimonial-img {
+  width: 100px;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.15);
+  margin-bottom: 2px;
+  opacity: 0.99;
+}
+
+#testimonio .stars {
+  color: #faef4f;
+}
+
+#testimonio .testimonio-personal {
+  color: #b8b8b8;
+  size: 10%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#testimonio .carousel-item {
+  background: linear-gradient(rgba(14, 13, 13, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../src/images/testimonials-bg.jpg");
+}
+
+/*--------------------------------------------------------------
+# Sección de eventos
+--------------------------------------------------------------*/
+#eventos-section {
+  background: linear-gradient(rgba(14, 13, 13, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../src/images/events-bg.jpg");
+  padding-bottom: 80px;
+  color: #fff;
+}
+
+#eventos-section h2,
+h3 {
+  font-family: "Dancing Script", cursive;
+}
+
+#eventos-section .section-title {
+  padding-bottom: 20px;
+  text-align: center;
+  padding-top: 86px;
+}
+
+#eventos-section .info-event {
+  text-align: justify;
+}
+
+#eventos-section i {
+  color: #ffb03b;
+}
+
+#eventos-section h2 {
+  color: rgb(255, 255, 255);
+}
+
+#eventos-section span {
+  color: #ffb03b;
+}
+
+#eventos-section image-evento {
+  color: #b8b8b8;
+  size: 10%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#eventos-section #carouselEventoSection .carousel-item {
+  height: 420px;
+}
+
+/*--------------------------------------------------------------
+# Sección de eventos inicio
+--------------------------------------------------------------*/
+#events .image-bg-service {
+  background-image: url("../src/images/events-bg-index.png");
+  padding-top: 20px;
+}
+
+#events h2,
+h3 {
+  font-family: "Dancing Script", cursive;
+}
+
+#events .section-title {
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+#events .btn-menu {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+#events .btn-outline-warning {
+  color: #000;
+  background-color: transparent;
+  border-color: #0c0900;
+}
+
+#events .btn-outline-warning:hover {
+  color: #fff;
+  background-color: #ffb03b;
+  border-color: #ffbf3b;
+}
+
+#events h2 {
+  color: #000;
+}
+
+#events span {
+  color: #ffb03b;
+}
+
+/*--------------------------------------------------------------
+# Sección de contactos
+--------------------------------------------------------------*/
+#contactos {
+  padding: 80px 0;
+}
+
+#contactos i {
+  color: #ffb03b;
+  font-size: 2em;
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+#contactos .section-title {
+  text-align: center;
+}
+
+#contactos h2,
+span,
+h4 {
+  font-family: "Dancing Script", cursive;
+}
+
+#contactos #contactos h2 {
+  color: #000;
+}
+
+#contactos span {
+  color: #ffb03b;
+}
+
+#contactos .formulario-contacto {
+  padding: 14px;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+}
+
+#contactos iframe {
+  padding: 0 10px 0 10px;
+}
+
+/*--------------------------------------------------------------
+# Sección de chefs
+--------------------------------------------------------------*/
+#chefs {
+  padding: 30px 0 40px 0;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+
+#chefs .section-title {
+  padding-bottom: 10px;
+}
+
+#chefs h2,
+h3 {
+  color: #ffb03b;
+}
+
+#chefs h5 {
+  color: #000;
+}
+
+#chefs a {
+  color: #8b8b8a;
+  font-size: 20px;
+}
+
+#chefs .team {
+  padding-top: 10px;
+}
+
+/*--------------------------------------------------------------
+# Sección de galería de imágenes
+--------------------------------------------------------------*/
+#galeria {
+  padding-top: 80px;
+}
+
+#galeria .gal-item {
+  overflow: hidden;
+  padding: 8px;
+}
+
+#galeria .gal-item .box {
+  height: 100%;
+  overflow: hidden;
+}
+
+#galeria .box img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+#galeria h1 {
+  font-family: "Dancing Script", cursive;
+  color: #070707;
+}
+
+/*--------------------------------------------------------------
+# Sección de footer
+--------------------------------------------------------------*/
+
+#footer {
+  padding-top: 10px;
+  background-color: #0c0b0b;
+  color: #ffff;
+  text-align: center;
+  border-top: 1px solid rgba(50, 50, 50, 0.3);
+  width: 100%;
+  bottom: 0;
+}
+
+#footer i {
+  font-size: 20px;
+  color: #ffbf3b;
+}
+
+/*--------------------------------------------------------------
+# Mapa del sitio
+--------------------------------------------------------------*/
+#site-map {
+  padding-top: 80px;
+}
+
+#site-map i {
+  color: #ffb03b;
+}
+
+#site-map h2 {
+  font-family: "Dancing Script", cursive;
+}
+
+#site-map h2 {
+  color: #000000;
+}
+
+#site-map .section-title h2 {
+  font-family: "Dancing Script", cursive;
+  color: #ffb03b;
+  text-align: center;
+}
+
+#site-map a {
+  color: #000;
+}
+
+#site-map .site {
+  padding-bottom: 20px;
+}
+
+#site-map .section-title h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/*-----------------------
+Cargando
+------------------------*/
+#load {
+  display: none;
+  width: 220px;
+}
+
+#mailImage {
+  width: 220px;
+}
+/*-----------------------
+Compra - Reserva
+------------------------*/
+#buy {
+  padding-top: 80px;
+}
+
+/*-----------------------------------------------
+Form envío
+-----------------------------------------------*/
+#buy-process #total {
+  font-weight: bold;
+}

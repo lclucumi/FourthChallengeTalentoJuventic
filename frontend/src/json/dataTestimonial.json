@@ -1,0 +1,29 @@
+{
+  "objTestimonials": [
+    {
+      "nombre": "Saul Goodman",
+      "puesto": "Ceo &amp; Founder",
+      "testimonio": "Ambiente idóneo para ir con amigos o con tu pareja ¡Excelente restaurante!"
+    },
+    {
+      "nombre": "Sara Wilsson",
+      "puesto": "Designer",
+      "testimonio": "Un lugar muy acogedor, excelente servicio al cliente, lo visito siempre que puedo."
+    },
+    {
+      "nombre": "Jena Karlis",
+      "puesto": "Store Owner",
+      "testimonio": "Me encantó la comida, los platos son exactamente como se ven en el menú. Música tranquila y un buen ambiente para compartir con amigos."
+    },
+    {
+      "nombre": "Matt Brandon",
+      "puesto": "Freelancer",
+      "testimonio": "Celebramos nuestro aniversario en Dunkers y todo estuvo muy organizado, excelente servicio, ¡La comida, perfecta!."
+    },
+    {
+      "nombre": "John Larson",
+      "puesto": "Entrepreneur",
+      "testimonio": "Celebré el aniversario de la empresa con todo el personal en Dunkers, y les puedo decir que es el mejor restaurante para eventos."
+    }
+  ]
+}

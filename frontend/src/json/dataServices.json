@@ -1,0 +1,81 @@
+{
+  "objServices": [
+    {
+      "servicio": "Cumpleaños",
+      "precio": "$120.000",
+      "descripcion": "Cumplir un año más de vida es un evento que debe celebrarse en grande. Ya sea quieras tener:",
+      "text": "Nosotros contamos con todo lo que necesitas.",
+      "puntos": [
+        { "1": "Fiesta Temática" },
+        { "2": "Casino" },
+        { "3": "Juegos Gigantes para que todos tus invitados se diviertan" }
+      ]
+    },
+    {
+      "servicio": "Despedidas",
+      "precio": "$120.000",
+      "descripcion": "Si te gusta la variedad y tener muchas opciones de dinámicas para tu despedida, qué te parece nuestro original y novedoso programa de juegos, en donde todas se divertirán como nunca, contamos con:",
+      "text": "¡Anímate a disfrutar con nosotros de tus eventos!",
+      "puntos": [
+        { "1": "Animadores." },
+        { "2": "Souvenirs." },
+        { "3": "premios." }
+      ]
+    },
+    {
+      "servicio": "Cena con amigos",
+      "precio": "$120.000",
+      "descripcion": "Celebra junto a tus amigos en nuestro restaurante, te ofrecemos un menú variado para que elijas lo que de acuerdo a tus necesidades. Contamos con:",
+      "text": "¡Importante! reservar con al menos 3 días de anticipación.",
+      "puntos": [
+        {
+          "1": "Platos gourmet."
+        },
+        { "2": "Música ambiental o temática." },
+        {
+          "3": "Mesas al aire libre o si lo deseas puedes cenar directamente dentro del restaurante."
+        }
+      ]
+    },
+    {
+      "servicio": "Fiestas infantiles",
+      "precio": "$120.000",
+      "descripcion": "La música comienza cuando todos tus amigos están en tu casa, entre nuestros servicios te ofrecemos:",
+      "text": "Nosotros nos encargaremos de llevar tu primera experiencia disco. Donde no dejarán de brincar, bailar y cantar con nuestro karaoke. Estamos seguros que será la fiesta del año de todos los niños.",
+      "puntos": [
+        {
+          "1": "Tendrás el mejor equipo de iluminación, audio y pista de baile."
+        },
+        { "2": "Tendrás toda una batucada infantil." }
+      ]
+    },
+    {
+      "servicio": "Declaraciones o propuestas",
+      "precio": "$120.000",
+      "descripcion": "Los asesoraremos de principio a fin para asegurar una perfecta organización, acompañando a los familiares y amigos disponiendo del protocolo adecuado para los novios e invitados.",
+      "text": "Tu personalidad fijará el ritmo del evento.",
+      "puntos": [
+        {
+          "1": "Romántica."
+        },
+        { "2": "Solemne." },
+        { "3": "Desenfadada." },
+        { "4": "Divertida." }
+      ]
+    },
+    {
+      "servicio": "Aniversario",
+      "precio": "$120.000",
+      "descripcion": "Ese momento único en la vida, merece ser compartido con felicidad y pasión.",
+      "text": "Adaptaremos  a nuestro equipo de trabajo para que todo sea espectacular y entrañable.",
+      "puntos": [
+        {
+          "1": "Te escuchamos para transmitir lo que deseas a lo largo de la duración del evento."
+        },
+        {
+          "2": "A partir de este momento relájate y comienza a disfrutar porque nosotros nos encargaremos de todo."
+        }
+      ]
+    }
+  ]
+}

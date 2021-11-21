@@ -1,0 +1,40 @@
+{
+  "objChefs": [
+    {
+      "nombre": "Susana Zapata",
+      "puesto": "Gerente general"
+    },
+    {
+      "nombre": "Rodrigo Jaramillo",
+      "puesto": "Master Chef"
+    },
+    {
+      "nombre": "Juana Acevedo",
+      "puesto": "Master Chef"
+    },
+    {
+      "nombre": "Carlos Tenorio",
+      "puesto": "Master Chef"
+    },
+    {
+      "nombre": "David Cardona",
+      "puesto": "Personal de servicio a la mesa"
+    },
+    {
+      "nombre": "Luis Bernal",
+      "puesto": "Personal de servicio a la mesa"
+    },
+    {
+      "nombre": "Walter Vanegas",
+      "puesto": "Personal de servicio a la mesa"
+    },
+    {
+      "nombre": "Armando Casillas",
+      "puesto": "Personal de limpieza"
+    },
+    {
+      "nombre": "Fernanda Suarez",
+      "puesto": "Personal de limpieza"
+    }
+  ]
+}

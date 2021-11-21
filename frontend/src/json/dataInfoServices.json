@@ -1,0 +1,40 @@
+{
+  "objInfoServices": [
+    {
+      "id": "tab-1-e",
+      "img": "../images/event-birthday.jpg",
+      "title": "Cumpleaños",
+      "text": "Cumplir un año más de vida es un evento que debe celebrarse en grande. Ponte en contacto con nosotros para conocer todas las opciones que tenemos para ti. El límite está en tu imaginación. ¡Déjanos ayudarte a organizar una Fiesta de Cumpleaños Inolvidable!"
+    },
+    {
+      "id": "tab-2-e",
+      "img": "../images/anniversary.jpg",
+      "title": "Aniversario",
+      "text": "Ese momento único en la vida, merece ser compartido con felicidad y pasión.  Por este motivo, te guiamos en todo el proceso del aniversario de boda para que sea perfecto e inolvidable.Contáctanos y permítenos hacer parte de este momento."
+    },
+    {
+      "id": "tab-3-e",
+      "img": "../images/child-party.jpg",
+      "title": "Fiestas infantiles",
+      "text": "La música comienza cuando todos tus amigos están en tu casa. Tendrás el mejor equipo de iluminación, audio y pista de baile, además, tendrás toda una batucada infantil. Contáctanos para mayor información."
+    },
+    {
+      "id": "tab-4-e",
+      "img": "../images/proposal.jpg",
+      "title": "Declaraciones o propuestas",
+      "text": "Nuestro objetivo es crear propuestas de compromiso inolvidables, personalizadas, involucrando a familiares y amigos para comenzar un día único e irrepetible, prestando un servicio a medida adaptándonos a las necesidades de la pareja."
+    },
+    {
+      "id": "tab-5-e",
+      "img": "../images/event-custom.jpg",
+      "title": "Despedidas y compromisos",
+      "text": "Si te gusta la variedad y tener muchas opciones de dinámicas para tu despedida, qué te parece nuestro original y novedoso programa de juegos, en donde todas se divertirán como nunca, guiadas por nuestras animadoras, con souvenirs, premios y una gran conductora que hará de este rato un momento de muchas risas y grandes recuerdos con tus amigas."
+    },
+    {
+      "id": "tab-6-e",
+      "img": "../images/event-private.jpg",
+      "title": "Cena con amigos",
+      "text": "Celebra junto a tus amigos en nuestro restaurante, te ofrecemos un menú variado para que elijas lo que de acuerdo a tus necesidades."
+    }
+  ]
+}

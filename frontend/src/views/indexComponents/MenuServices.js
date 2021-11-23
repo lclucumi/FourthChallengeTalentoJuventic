@@ -1,17 +1,11 @@
 import React from "react";
 import data from "../../json/dataInfoServices.json";
-import img0 from "../../images/event-birthday.jpg";
-import img1 from "../../images/anniversary.jpg";
-import img2 from "../../images/child-party.jpg";
-import img3 from "../../images/proposal.jpg";
-import img4 from "../../images/event-custom.jpg";
-import img5 from "../../images/event-private.jpg";
 import DescriptionService from "./DescriptionService";
 
 class MenuServices extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { number: 0, img: img0 };
+    this.state = { number: 0, img: data.objInfoServices[0].img };
   }
   render() {
     return (
@@ -28,7 +22,9 @@ class MenuServices extends React.Component {
                 className="nav-link active"
                 data-bs-toggle="tab"
                 href="#tab-1-e"
-                onClick={() => this.setState({ number: 0, img: img0 })}
+                onClick={() =>
+                  this.setState({ number: 0, img: data.objInfoServices[0].img })
+                }
               >
                 {data.objInfoServices[0].title}
               </a>
@@ -38,7 +34,9 @@ class MenuServices extends React.Component {
                 className="nav-link"
                 data-bs-toggle="tab"
                 href="#tab-2-e"
-                onClick={() => this.setState({ number: 1, img: img1 })}
+                onClick={() =>
+                  this.setState({ number: 1, img: data.objInfoServices[1].img })
+                }
               >
                 {data.objInfoServices[1].title}
               </a>
@@ -48,7 +46,9 @@ class MenuServices extends React.Component {
                 className="nav-link"
                 data-bs-toggle="tab"
                 href="#tab-3-e"
-                onClick={() => this.setState({ number: 2, img: img2 })}
+                onClick={() =>
+                  this.setState({ number: 2, img: data.objInfoServices[2].img })
+                }
               >
                 {data.objInfoServices[2].title}
               </a>
@@ -58,7 +58,9 @@ class MenuServices extends React.Component {
                 className="nav-link"
                 data-bs-toggle="tab"
                 href="#tab-4-e"
-                onClick={() => this.setState({ number: 3, img: img3 })}
+                onClick={() =>
+                  this.setState({ number: 3, img: data.objInfoServices[3].img })
+                }
               >
                 {data.objInfoServices[3].title}
               </a>
@@ -68,7 +70,9 @@ class MenuServices extends React.Component {
                 className="nav-link"
                 data-bs-toggle="tab"
                 href="#tab-5-e"
-                onClick={() => this.setState({ number: 4, img: img4 })}
+                onClick={() =>
+                  this.setState({ number: 4, img: data.objInfoServices[4].img })
+                }
               >
                 {data.objInfoServices[4].title}
               </a>
@@ -78,7 +82,9 @@ class MenuServices extends React.Component {
                 className="nav-link"
                 data-bs-toggle="tab"
                 href="#tab-6-e"
-                onClick={() => this.setState({ number: 5, img: img5 })}
+                onClick={() =>
+                  this.setState({ number: 5, img: data.objInfoServices[5].img })
+                }
               >
                 {data.objInfoServices[5].title}
               </a>

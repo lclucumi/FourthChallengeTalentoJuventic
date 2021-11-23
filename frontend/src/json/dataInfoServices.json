@@ -2,37 +2,37 @@
   "objInfoServices": [
     {
       "id": "tab-1-e",
-      "img": "../images/event-birthday.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/services%2Fevent-birthday.jpg?alt=media&token=108725e4-454a-47fb-adb7-1230021e2022",
       "title": "Cumpleaños",
       "text": "Cumplir un año más de vida es un evento que debe celebrarse en grande. Ponte en contacto con nosotros para conocer todas las opciones que tenemos para ti. El límite está en tu imaginación. ¡Déjanos ayudarte a organizar una Fiesta de Cumpleaños Inolvidable!"
     },
     {
       "id": "tab-2-e",
-      "img": "../images/anniversary.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/services%2Fanniversary.jpg?alt=media&token=a655f8d7-7795-46de-8204-add76f7f295b",
       "title": "Aniversario",
       "text": "Ese momento único en la vida, merece ser compartido con felicidad y pasión.  Por este motivo, te guiamos en todo el proceso del aniversario de boda para que sea perfecto e inolvidable.Contáctanos y permítenos hacer parte de este momento."
     },
     {
       "id": "tab-3-e",
-      "img": "../images/child-party.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/services%2Fchild-party.jpg?alt=media&token=d79e90ef-175e-49f2-aed0-f87a51596bad",
       "title": "Fiestas infantiles",
       "text": "La música comienza cuando todos tus amigos están en tu casa. Tendrás el mejor equipo de iluminación, audio y pista de baile, además, tendrás toda una batucada infantil. Contáctanos para mayor información."
     },
     {
       "id": "tab-4-e",
-      "img": "../images/proposal.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/services%2Fproposal.jpg?alt=media&token=9f6ad2fe-0881-42e7-b4c3-1e5105278389",
       "title": "Declaraciones o propuestas",
       "text": "Nuestro objetivo es crear propuestas de compromiso inolvidables, personalizadas, involucrando a familiares y amigos para comenzar un día único e irrepetible, prestando un servicio a medida adaptándonos a las necesidades de la pareja."
     },
     {
       "id": "tab-5-e",
-      "img": "../images/event-custom.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/services%2Fevent-custom.jpg?alt=media&token=90a44be9-d01f-4e0f-9bc2-2bc5c2e6bb90",
       "title": "Despedidas y compromisos",
       "text": "Si te gusta la variedad y tener muchas opciones de dinámicas para tu despedida, qué te parece nuestro original y novedoso programa de juegos, en donde todas se divertirán como nunca, guiadas por nuestras animadoras, con souvenirs, premios y una gran conductora que hará de este rato un momento de muchas risas y grandes recuerdos con tus amigas."
     },
     {
       "id": "tab-6-e",
-      "img": "../images/event-private.jpg",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/services%2Fevent-private.jpg?alt=media&token=15473b0d-aa19-4701-aa64-be883e543668",
       "title": "Cena con amigos",
       "text": "Celebra junto a tus amigos en nuestro restaurante, te ofrecemos un menú variado para que elijas lo que de acuerdo a tus necesidades."
     }

@@ -2,38 +2,38 @@
   "objOutStanding": [
     {
       "id": "tab-1",
-      "img": "../images/specials-1.jpg",
       "title": "Cream noodles",
       "firstText": "Deliciosos spaguetis en crema para acompañar los momentos en familia.",
-      "secondText": "Bañado en los exóticos sabores del curry y coco tailandés, este plato crujiente, relleno de pollo y camarones, acompañado con crema, se sirve en un consomé de bonito, acompañado de col lombarda."
+      "secondText": "Bañado en los exóticos sabores del curry y coco tailandés, este plato crujiente, relleno de pollo y camarones, acompañado con crema, se sirve en un consomé de bonito, acompañado de col lombarda.",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/specials%2Fspecials-1.jpg?alt=media&token=3714b1f5-ed34-4224-a12e-7545b58ecaca"
     },
     {
       "id": "tab-2",
-      "img": "../images/specials-2.jpg",
       "title": "Tropical party salad",
       "firstText": "Las frutas aportan un toque diferente y muy sabroso a las ensaladas.",
-      "secondText": "En platos salados las frutas aportan un toque dulce, diferente, enriqueciendo cada bocado con matices novedosos y exquisitos. Y qué decir de las ensaladas con frutas. La mezcla de ingredientes frescos es perfecta para los que quieran disfrutar de la mejor gastronomía cuidando al mismo tiempo el bienestar de su cuerpo."
+      "secondText": "En platos salados las frutas aportan un toque dulce, diferente, enriqueciendo cada bocado con matices novedosos y exquisitos. Y qué decir de las ensaladas con frutas. La mezcla de ingredientes frescos es perfecta para los que quieran disfrutar de la mejor gastronomía cuidando al mismo tiempo el bienestar de su cuerpo.",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/specials%2Fspecials-2.jpg?alt=media&token=38f884e8-b3b9-40ef-be0f-c60f5eb99575"
     },
     {
       "id": "tab-3",
-      "img": "../images/specials-3.jpg",
       "title": "Soap with Spaguetti al Ragú",
       "firstText": "Podríamos decir que los espaguetis a la boloñesa son uno de los platos italianos más internacionalizados y con más variantes que existen.",
-      "secondText": "Originariamente, este plato se cocinaba sin tomate y la carne se cocía en vino blanco y leche. Hoy, se hace hincapié en utilizar un corte de carne magra llamada cartella de buey o ternera (nunca de cerdo) y en sofreir las verduras con panceta, en nuestro restaurante utilizamos además una sopa de la casa para aompañar este plato."
+      "secondText": "Originariamente, este plato se cocinaba sin tomate y la carne se cocía en vino blanco y leche. Hoy, se hace hincapié en utilizar un corte de carne magra llamada cartella de buey o ternera (nunca de cerdo) y en sofreir las verduras con panceta, en nuestro restaurante utilizamos además una sopa de la casa para aompañar este plato.",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/specials%2Fspecials-3.jpg?alt=media&token=28cd08d8-a62a-455c-8dfc-33db41e40350"
     },
     {
       "id": "tab-4",
-      "img": "../images/specials-4.jpg",
       "title": "Ravioles ciboulette",
       "firstText": "Las pastas son altas en hidratos de carbono y proporcionan energía rápidamente, por lo que son útiles para todo tipo de personas, incluso los deportistas.",
-      "secondText": "Este plato incorpora los tomates, los camarones, tabasco, ciboulette, sal, pimienta y las semillas de sésamo. Se cubren con un cuadrado de masa y se sellan los bordes marcando el relleno y el excedente de masa. Es un plato idóneo para aventurarse a probar algo diferente a lo cotidiano."
+      "secondText": "Este plato incorpora los tomates, los camarones, tabasco, ciboulette, sal, pimienta y las semillas de sésamo. Se cubren con un cuadrado de masa y se sellan los bordes marcando el relleno y el excedente de masa. Es un plato idóneo para aventurarse a probar algo diferente a lo cotidiano.",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/specials%2Fspecials-4.jpg?alt=media&token=c394869a-d917-4a12-943e-17b1cbc23a77"
     },
     {
       "id": "tab-5",
-      "img": "../images/specials-5.jpg",
       "title": "House salad",
       "firstText": "No hay nada mejor que los platillos ricos, saludables.",
-      "secondText": "Este plato consta de un bowl con crema, roquefort, salpimienta. Integramos la espinaca, arúgula, lechuga, quinoas, y adereza con aceite de oliva y ralladura de limón. Si lo deseas, te servimos con pechuga en trozos grandes."
+      "secondText": "Este plato consta de un bowl con crema, roquefort, salpimienta. Integramos la espinaca, arúgula, lechuga, quinoas, y adereza con aceite de oliva y ralladura de limón. Si lo deseas, te servimos con pechuga en trozos grandes.",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/specials%2Fspecials-5.jpg?alt=media&token=99411cd6-6850-4e12-9846-d5714724bff9"
     }
   ]
 }

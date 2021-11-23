@@ -2,26 +2,13 @@ import React from "react";
 import ModalService from "../views/ServiceComponents/ModalService";
 import Carousel from "react-bootstrap/Carousel";
 import dataServices from "../json/dataServices.json";
-import imgService1 from "../images/event-birthday.jpg";
-import imgService2 from "../images/event-custom.jpg";
-import imgService3 from "../images/event-private.jpg";
-import imgService4 from "../images/child-party.jpg";
-import imgService5 from "../images/proposal.jpg";
-import imgService6 from "../images/anniversary.jpg";
 import Header from "./Header";
 import Footer from "./Footer";
 class Services extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      images: [
-        imgService1,
-        imgService2,
-        imgService3,
-        imgService4,
-        imgService5,
-        imgService6,
-      ],
+      images: dataServices.objServices[0].img,
       number: 0,
     };
   }
@@ -52,7 +39,7 @@ class Services extends React.Component {
                             <div className="row">
                               <div className="col-md-6 col-sm-12 image-evento">
                                 <img
-                                  src={this.state.images[i]}
+                                  src={service.img}
                                   className="d-block w-100 img-fluid shadow-lg sha"
                                 />
                               </div>
@@ -74,7 +61,7 @@ class Services extends React.Component {
                                 <div className="btn-menu">
                                   <ModalService
                                     service={service.servicio}
-                                    img={i}
+                                    img={service.img}
                                   />
                                   <a
                                     className="btn btn-outline-warning"

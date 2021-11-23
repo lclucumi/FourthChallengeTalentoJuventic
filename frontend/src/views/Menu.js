@@ -34,6 +34,7 @@ class Menu extends React.Component {
                     <div id="left_column" key={menu.precio}>
                       <MenuPlates
                         i={i}
+                        image={menu.image}
                         precio={menu.precio}
                         plate={menu.plato}
                         ingredients={menu.ingredientes}
@@ -47,6 +48,7 @@ class Menu extends React.Component {
                     <div id="right_column" key={menu.precio}>
                       <MenuPlates
                         i={i}
+                        image={menu.image}
                         precio={menu.precio}
                         plate={menu.plato}
                         ingredients={menu.ingredientes}

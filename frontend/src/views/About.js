@@ -1,37 +1,11 @@
 import React from "react";
 import TestimonialCarousel from "./TestimonialCarousel";
 import dataChefs from "../json/dataChefs.json";
-import usImg from "../images/us-image.jpg";
-import imgChef1 from "../images/chefs/manager.jpg";
-import imgChef2 from "../images/chefs/chefs-1.jpg";
-import imgChef3 from "../images/chefs/chefs-2.jpg";
-import imgChef4 from "../images/chefs/chefs-3.jpg";
-import imgChef5 from "../images/chefs/waiter.jpg";
-import imgChef6 from "../images/chefs/waiter-2.jpg";
-import imgChef7 from "../images/chefs/waiter-3.jpg";
-import imgChef8 from "../images/chefs/cleaning-staff.jpg";
-import imgChef9 from "../images/chefs/cleaning-staff-2.jpg";
 import { Card, Col, Row } from "react-bootstrap";
 import Header from "./Header";
 import Footer from "./Footer";
 
 class About extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      chefImg: [
-        imgChef1,
-        imgChef2,
-        imgChef3,
-        imgChef4,
-        imgChef5,
-        imgChef6,
-        imgChef7,
-        imgChef8,
-        imgChef9,
-      ],
-    };
-  }
   render() {
     return (
       <>
@@ -44,7 +18,11 @@ class About extends React.Component {
           </div>
           <div class="row us-distance" id="imagen">
             <div class="col-md-6 col-sm-12">
-              <img class="img-fluid shadow-lg sha" src={usImg} alt="nosotros" />
+              <img
+                class="img-fluid shadow-lg sha"
+                src="https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/us-image.jpg?alt=media&token=01ab2526-5101-4b47-a73c-9d6168a1ed6d"
+                alt="nosotros"
+              />
             </div>
             <div class="col-md-6 col-sm-12">
               <div class="content us-content">
@@ -84,11 +62,11 @@ class About extends React.Component {
             </div>
 
             <Row>
-              {dataChefs.objChefs.map((chef, i) => {
+              {dataChefs.objChefs.map((chef) => {
                 return (
                   <Col className="px-4 team" md="4">
                     <Card>
-                      <Card.Img variant="top" src={this.state.chefImg[i]} />
+                      <Card.Img variant="top" src={chef.img} />
                       <Card.Body>
                         <Card.Title>
                           <h3>{chef.nombre}</h3>

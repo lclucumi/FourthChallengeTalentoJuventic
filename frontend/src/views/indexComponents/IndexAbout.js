@@ -1,6 +1,5 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import imgAbout from "../../images/about.jpg";
 
 class IndexAbout extends React.Component {
   render() {
@@ -11,7 +10,7 @@ class IndexAbout extends React.Component {
             <Col className="px-6 imagen-about" md="6">
               <img
                 className="img-fluid shadow-lg sha"
-                src={imgAbout}
+                src="https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/about.jpg?alt=media&token=42405577-9d2b-469d-80f4-f9e9520319e4"
                 alt="us"
               />
             </Col>
@@ -34,7 +33,7 @@ class IndexAbout extends React.Component {
                 <div className="btn-menu">
                   <a
                     className="btn btn-outline-warning"
-                    href="./pages/about.html"
+                    href="/about"
                     role="button"
                   >
                     Conócenos

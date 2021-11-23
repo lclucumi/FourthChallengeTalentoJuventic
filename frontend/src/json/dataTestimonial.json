@@ -3,26 +3,31 @@
     {
       "nombre": "Saul Goodman",
       "puesto": "Ceo &amp; Founder",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/testimonials%2Ftestimonials-1.jpg?alt=media&token=8ae438ae-2253-4b1b-866f-8b29a26911f7",
       "testimonio": "Ambiente idóneo para ir con amigos o con tu pareja ¡Excelente restaurante!"
     },
     {
       "nombre": "Sara Wilsson",
       "puesto": "Designer",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/testimonials%2Ftestimonials-2.jpg?alt=media&token=19462945-ed62-47c2-a169-5eec7372a1c4",
       "testimonio": "Un lugar muy acogedor, excelente servicio al cliente, lo visito siempre que puedo."
     },
     {
       "nombre": "Jena Karlis",
       "puesto": "Store Owner",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/testimonials%2Ftestimonials-3.jpg?alt=media&token=42b9b059-062c-4342-af3e-f37b51c541a7",
       "testimonio": "Me encantó la comida, los platos son exactamente como se ven en el menú. Música tranquila y un buen ambiente para compartir con amigos."
     },
     {
       "nombre": "Matt Brandon",
       "puesto": "Freelancer",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/testimonials%2Ftestimonials-4.jpg?alt=media&token=43543d36-89b6-484a-9dfe-cfea28b781a3",
       "testimonio": "Celebramos nuestro aniversario en Dunkers y todo estuvo muy organizado, excelente servicio, ¡La comida, perfecta!."
     },
     {
       "nombre": "John Larson",
       "puesto": "Entrepreneur",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/testimonials%2Ftestimonials-5.jpg?alt=media&token=a775447c-57de-4670-bddd-19165a8ec2e7",
       "testimonio": "Celebré el aniversario de la empresa con todo el personal en Dunkers, y les puedo decir que es el mejor restaurante para eventos."
     }
   ]

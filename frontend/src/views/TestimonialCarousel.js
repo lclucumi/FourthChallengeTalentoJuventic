@@ -1,19 +1,8 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import dataTestimonial from "../json/dataTestimonial.json";
-import imgSlide1 from "../images/testimonials/testimonials-1.jpg";
-import imgSlide2 from "../images/testimonials/testimonials-2.jpg";
-import imgSlide3 from "../images/testimonials/testimonials-3.jpg";
-import imgSlide4 from "../images/testimonials/testimonials-4.jpg";
-import imgSlide5 from "../images/testimonials/testimonials-5.jpg";
 
 class TestimonialCarousel extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      slideImg: [imgSlide1, imgSlide2, imgSlide3, imgSlide4, imgSlide5],
-    };
-  }
   render() {
     return (
       <>
@@ -35,7 +24,7 @@ class TestimonialCarousel extends React.Component {
                             <div className="row">
                               <div className="col-md-6 col-sm-6 image-evento">
                                 <img
-                                  src={this.state.slideImg[i]}
+                                  src={testimonial.img}
                                   className="testimonial-img"
                                   alt=""
                                 />

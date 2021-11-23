@@ -2,39 +2,48 @@
   "objChefs": [
     {
       "nombre": "Susana Zapata",
-      "puesto": "Gerente general"
+      "puesto": "Gerente general",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/chefs%2Fmanager.jpg?alt=media&token=fe27a1ca-7f7f-4ad1-ae2f-c2369dc8c800"
     },
     {
       "nombre": "Rodrigo Jaramillo",
-      "puesto": "Master Chef"
+      "puesto": "Master Chef",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/chefs%2Fchefs-1.jpg?alt=media&token=4e3957ec-b68d-4fee-a760-7d344465eb8c"
     },
     {
       "nombre": "Juana Acevedo",
-      "puesto": "Master Chef"
+      "puesto": "Master Chef",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/chefs%2Fchefs-2.jpg?alt=media&token=f01602aa-d791-4a0e-aa7f-e952aa4bb385"
     },
     {
       "nombre": "Carlos Tenorio",
-      "puesto": "Master Chef"
+      "puesto": "Master Chef",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/chefs%2Fchefs-3.jpg?alt=media&token=b1929265-ab0d-4d99-822e-d75eb64d6a71"
     },
     {
       "nombre": "David Cardona",
-      "puesto": "Personal de servicio a la mesa"
+      "puesto": "Personal de servicio a la mesa",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/chefs%2Fwaiter.jpg?alt=media&token=85554f6a-58be-4351-a37a-7a8b1df088c5"
     },
     {
       "nombre": "Luis Bernal",
-      "puesto": "Personal de servicio a la mesa"
+      "puesto": "Personal de servicio a la mesa",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/chefs%2Fwaiter-2.jpg?alt=media&token=5652e163-40a6-40f9-b36a-50fb4d97c0ec"
     },
     {
       "nombre": "Walter Vanegas",
-      "puesto": "Personal de servicio a la mesa"
+      "puesto": "Personal de servicio a la mesa",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/chefs%2Fwaiter-3.jpg?alt=media&token=e1d8a412-7ff7-4cac-b047-671542b7cece"
     },
     {
       "nombre": "Armando Casillas",
-      "puesto": "Personal de limpieza"
+      "puesto": "Personal de limpieza",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/chefs%2Fcleaning-staff.jpg?alt=media&token=ad0e5379-ee04-49a6-8a38-6218b8effa59"
     },
     {
       "nombre": "Fernanda Suarez",
-      "puesto": "Personal de limpieza"
+      "puesto": "Personal de limpieza",
+      "img": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/chefs%2Fcleaning-staff-2.jpg?alt=media&token=79b28de5-13f6-4198-943b-4c7c90097837"
     }
   ]
 }

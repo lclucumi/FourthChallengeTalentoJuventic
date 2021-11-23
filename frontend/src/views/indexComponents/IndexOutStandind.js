@@ -23,11 +23,7 @@ class IndexOutStanding extends React.Component {
               <MenuOutStanding />
             </Row>
             <div className="btn-menu">
-              <a
-                className="btn btn-outline-warning"
-                href="./pages/menu.html"
-                role="button"
-              >
+              <a className="btn btn-outline-warning" href="/menu" role="button">
                 Ver menú completo
               </a>
             </div>
@@ -53,7 +49,7 @@ class IndexOutStanding extends React.Component {
             <div className="btn-menu">
               <a
                 className="btn btn-outline-warning"
-                href="./pages/services.html"
+                href="/service"
                 role="button"
               >
                 Conoce nuestros servicios

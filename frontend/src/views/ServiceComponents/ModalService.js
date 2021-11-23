@@ -1,11 +1,5 @@
 import React, { useState } from "react";
 import { Modal, Row, Col, Form } from "react-bootstrap";
-import imgService1 from "../../images/event-birthday.jpg";
-import imgService2 from "../../images/event-custom.jpg";
-import imgService3 from "../../images/event-private.jpg";
-import imgService4 from "../../images/child-party.jpg";
-import imgService5 from "../../images/proposal.jpg";
-import imgService6 from "../../images/anniversary.jpg";
 import emailjs from "emailjs-com";
 
 export default function InfoModal(props) {
@@ -39,14 +33,6 @@ export default function InfoModal(props) {
       );
   }
 
-  const [imgs] = useState([
-    imgService1,
-    imgService2,
-    imgService3,
-    imgService4,
-    imgService5,
-    imgService6,
-  ]);
   const [data] = useState(props);
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -69,7 +55,7 @@ export default function InfoModal(props) {
         <Modal.Body>
           <Row className="justify-content-md-center">
             <Col md="10">
-              <img class="img-fluid" src={imgs[data.img]} alt="" />
+              <img class="img-fluid" src={data.img} alt="" />
               <Form id="form">
                 <div class="field">
                   <label for="nombre">Nombre</label>

@@ -1,8 +1,5 @@
 // React
 import React from "react";
-import imgSlide1 from "../../images/slide/slide-1.jpg";
-import imgSlide2 from "../../images/slide/slide-2.jpg";
-import imgSlide3 from "../../images/slide/slide-3.jpg";
 import Carousel from "react-bootstrap/Carousel";
 class IndexCarousel extends React.Component {
   render() {
@@ -13,7 +10,7 @@ class IndexCarousel extends React.Component {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src={imgSlide1}
+                src="https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/slide%2Fslide-1.jpg?alt=media&token=d420313d-f054-4441-92c2-731d18e506d1"
                 alt="First slide"
               />
               <Carousel.Caption>
@@ -27,7 +24,7 @@ class IndexCarousel extends React.Component {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src={imgSlide2}
+                src="https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/slide%2Fslide-2.jpg?alt=media&token=aa64f872-f702-4730-99bc-3684548d6024"
                 alt="Second slide"
               />
 
@@ -42,7 +39,7 @@ class IndexCarousel extends React.Component {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src={imgSlide3}
+                src="https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/slide%2Fslide-3.jpg?alt=media&token=7b214ea0-baaa-474f-9ee5-2f845be82f61"
                 alt="Third slide"
               />
 

@@ -1,34 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Row, Col } from "react-bootstrap";
-import imgPlate1 from "../../images/menu/lobster-bisque.jpg";
-import imgPlate2 from "../../images/menu/Bread-Barrel.jpg";
-import imgPlate3 from "../../images/menu/Crab-Cake.jpeg";
-import imgPlate4 from "../../images/menu/Caesar-Selections.jpeg";
-import imgPlate5 from "../../images/menu/Bandeja-Paisa.jpg";
-import imgPlate6 from "../../images/menu/Cocido.jpg";
-//column
-import imgPlate7 from "../../images/menu/Tuscan-Grilled.jpg";
-import imgPlate8 from "../../images/menu/Mozarella-Stick.jpg";
-import imgPlate9 from "../../images/menu/Greek-Salad.jpeg";
-import imgPlate10 from "../../images/menu/Lasagna.jpg";
-import imgPlate11 from "../../images/menu/Pizza.jpg";
-import imgPlate12 from "../../images/menu/Ajiaco-santafereno.jpg";
 
 export default function InfoModal(props) {
-  const [imgs] = useState([
-    imgPlate1,
-    imgPlate2,
-    imgPlate3,
-    imgPlate4,
-    imgPlate5,
-    imgPlate6,
-    imgPlate7,
-    imgPlate8,
-    imgPlate9,
-    imgPlate10,
-    imgPlate11,
-    imgPlate12,
-  ]);
   const [data] = useState(props);
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -55,7 +28,7 @@ export default function InfoModal(props) {
         <Modal.Body>
           <Row className="justify-content-md-center">
             <Col md="10">
-              <img class="img-fluid" src={imgs[data.img]} alt="" />
+              <img class="img-fluid" src={data.image} alt="" />
               <p>
                 <span className="ingredient">Ingredientes:</span>{" "}
                 {data.ingredients}

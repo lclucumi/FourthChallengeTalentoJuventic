@@ -7,5 +7,6 @@
         public string description { get; set; }
         public string image { get; set; }
         public float price { get; set; }
+        public string text { get; set; }
     }
 }

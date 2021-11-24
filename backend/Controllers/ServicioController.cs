@@ -23,7 +23,7 @@ namespace backend.Controllers
         public JsonResult Get()
         {
             string query = @"
-                           select id,name,description,image,price
+                           select id,name,description,image,price,text
                            from
                            servicio";
             //Tablas en memoria
@@ -67,7 +67,7 @@ namespace backend.Controllers
                 mycon.Open();
                 using (MySqlCommand myCommand = new MySqlCommand(query, mycon))
                 {
-                    myCommand.Parameters.AddWithValue("@ClienteId", id);
+                    myCommand.Parameters.AddWithValue("@ServicioId", id);
 
                     myReader = myCommand.ExecuteReader();
                     table.Load(myReader);
@@ -81,8 +81,8 @@ namespace backend.Controllers
         }
 
         //ACTUALIZACIÓN
-        [HttpPut]
-        public JsonResult Put(Servicio ser)
+        [HttpPut("{id}")]
+        public JsonResult Put(int id, Servicio ser)
         {
             string query = @"
                         update servicio set 
@@ -90,6 +90,7 @@ namespace backend.Controllers
                         description =@ServicioDescripcion,
                         image =@ServicioImagen,
                         price =@ServicioPrecio,
+                        text =@ServicioTexto,
                         where id =@ServicioId;
             ";
 
@@ -106,6 +107,7 @@ namespace backend.Controllers
                     myCommand.Parameters.AddWithValue("@ServicioDescripcion", ser.description);
                     myCommand.Parameters.AddWithValue("@ServicioImagen", ser.image);
                     myCommand.Parameters.AddWithValue("@ServicioPrecio", ser.price);
+                    myCommand.Parameters.AddWithValue("@ServicioTexto", ser.text);
 
                     myReader = myCommand.ExecuteReader();
                     table.Load(myReader);
@@ -124,9 +126,9 @@ namespace backend.Controllers
         {
             string query = @"
                         insert into servicio 
-                        (name,description,image,price) 
+                        (name,description,image,price,text) 
                         values
-                        (@ServicioNombre,@ServicioDescripcion,@ServicioImagen,@ServicioPrecio);
+                        (@ServicioNombre,@ServicioDescripcion,@ServicioImagen,@ServicioPrecio,@ServicioTexto);
             ";
 
             DataTable table = new DataTable();
@@ -141,6 +143,7 @@ namespace backend.Controllers
                     myCommand.Parameters.AddWithValue("@ServicioDescripcion", ser.description);
                     myCommand.Parameters.AddWithValue("@ServicioImagen", ser.image);
                     myCommand.Parameters.AddWithValue("@ServicioPrecio", ser.price);
+                    myCommand.Parameters.AddWithValue("@ServicioTexto", ser.text);
 
                     myReader = myCommand.ExecuteReader();
                     table.Load(myReader);

@@ -321,7 +321,8 @@ h3 {
   font-size: 22px;
 }
 
-#loginCard {
+#loginCard,
+#registerCard {
   padding-top: 110px;
   padding-bottom: 110px;
   background-image: "../src/images/events-bg.jpg";

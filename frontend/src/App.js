@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 //Secciones
 import Login from "./views/Login";
+import SignIn from "./views/SignIn";
 import Inicio from "./views/Inicio";
 import Menu from "./views/Menu";
 import About from "./views/About";
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route exact path="/login">
           <Login />
+        </Route>
+        <Route exact path="/signin">
+          <SignIn />
         </Route>
         <Route exact path="/about">
           <About />

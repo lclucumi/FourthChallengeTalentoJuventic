@@ -19,7 +19,7 @@ class TestimonialCarousel extends React.Component {
                   <Carousel>
                     {dataTestimonial.objTestimonials.map((testimonial, i) => {
                       return (
-                        <Carousel.Item interval={1000}>
+                        <Carousel.Item interval={1000} key={i}>
                           <Carousel.Caption>
                             <div className="row">
                               <div className="col-md-6 col-sm-6 image-evento">

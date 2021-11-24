@@ -222,7 +222,7 @@ class Header extends React.Component {
 
                 <form className="d-flex userProfile">
                   <a href="/login" className="user">
-                    <i class="bx bx-user-circle"></i>
+                    <i className="bx bx-user-circle"></i>
                   </a>
                 </form>
 

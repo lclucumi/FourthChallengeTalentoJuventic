@@ -47,38 +47,38 @@ export default function InfoModal(props) {
       <Modal show={show} onHide={handleClose} centered>
         <Modal.Header closeButton>
           <Modal.Title>
-            <h5 class="modal-title" id="exampleModalLabel">
-              <strong>{data.service}</strong>
+            <h5 className="modal-title" id="exampleModalLabel">
+              <strong>{data.name}</strong>
             </h5>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Row className="justify-content-md-center">
             <Col md="10">
-              <img class="img-fluid" src={data.img} alt="" />
+              <img className="img-fluid" src={data.image} alt="" />
               <Form id="form">
-                <div class="field">
-                  <label for="nombre">Nombre</label>
+                <div className="field">
+                  <label htmlFor="nombre">Nombre</label>
                   <input
-                    class="form-control"
+                    className="form-control"
                     type="text"
                     name="nombre"
                     id="nombre"
-                    maxlength="50"
-                    minlength="20"
+                    maxLength="50"
+                    minLength="20"
                     required
                   />
                 </div>
-                <div class="field">
-                  <label for="correo">Correo</label>
+                <div className="field">
+                  <label htmlFor="correo">Correo</label>
                   <input
-                    class="form-control"
+                    className="form-control"
                     type="email"
                     name="correo"
                     id="correo"
                     aria-describedby="emailHelp"
-                    maxlength="60"
-                    minlength="13"
+                    maxLength="60"
+                    minLength="13"
                     required
                   />
                 </div>
@@ -86,62 +86,62 @@ export default function InfoModal(props) {
                   type="text"
                   name="reserva"
                   id="reserva"
-                  value="Cumpleaños"
+                  defaultValue="Cumpleaños"
                   hidden
                 />
-                <div class="field">
-                  <label for="telefono">Teléfono móvil</label>
+                <div className="field">
+                  <label htmlFor="telefono">Teléfono móvil</label>
                   <input
-                    class="form-control"
+                    className="form-control"
                     type="tel"
                     name="telefono"
                     pattern="[0-9]{10}"
                     id="telefono"
                     required
                   />
-                  <div class="invalid-feedback">
+                  <div className="invalid-feedback">
                     Por favor, ingrese el nombre en el campo correspondiente
                   </div>
                 </div>
-                <div class="field">
-                  <label for="indicaciones">Indicaciones</label>
+                <div className="field">
+                  <label htmlFor="indicaciones">Indicaciones</label>
                   <textarea
-                    class="form-control"
+                    className="form-control"
                     name="indicaciones"
                     id="indicaciones"
-                    maxlength="100"
-                    minlength="20"
+                    maxLength="100"
+                    minLength="20"
                     required
                   ></textarea>
                 </div>
-                <div class="field">
-                  <label for="fecha">fecha</label>
+                <div className="field">
+                  <label htmlFor="fecha">fecha</label>
                   <input
-                    class="form-control"
+                    className="form-control"
                     type="date"
                     name="fecha"
                     id="fecha"
                     required
                   />
                 </div>
-                <div class="field">
-                  <label for="hora">hora</label>
+                <div className="field">
+                  <label htmlFor="hora">hora</label>
                   <input
-                    class="form-control"
+                    className="form-control"
                     type="time"
                     name="hora"
                     id="hora"
                     required
                   />
                 </div>
-                <div class="field">
-                  <label for="personas">Cantidad de personas</label>
+                <div className="field">
+                  <label htmlFor="personas">Cantidad de personas</label>
                   <input
-                    class="form-control"
+                    className="form-control"
                     type="number"
                     name="personas"
                     id="personas"
-                    maxlength="3"
+                    maxLength="3"
                     required
                   />
                 </div>
@@ -151,11 +151,11 @@ export default function InfoModal(props) {
         </Modal.Body>
         <Modal.Footer>
           <input
-            class="btn btn-outline-warning"
+            className="btn btn-outline-warning"
             type="submit"
             id="button"
             onClick={(e) => dataService(e)}
-            value="Reservar"
+            defaultValue="Reservar"
           />
         </Modal.Footer>
       </Modal>

@@ -1,5 +1,4 @@
 import React from "react";
-import dataMenu from "../json/dataMenu.json";
 import MenuPlates from "./menuComponents/MenuPlates";
 import { Row } from "react-bootstrap";
 import Header from "./Header";
@@ -9,7 +8,21 @@ class Menu extends React.Component {
     super(props);
     this.state = {
       modalState: false,
+      dataMenu: [],
     };
+  }
+
+  componentDidMount() {
+    this.fetchData();
+  }
+
+  fetchData() {
+    fetch("http://localhost:5016/api/Plato")
+      .then((response) => response.json())
+      .then((data) => {
+        this.setState({ dataMenu: data });
+      })
+      .catch((error) => console.log(error));
   }
 
   render() {
@@ -28,32 +41,32 @@ class Menu extends React.Component {
             </div>
 
             <Row className="justify-content-md-center">
-              {dataMenu.objMenu.map((menu, i) => {
+              {this.state.dataMenu.map((menu, i) => {
                 if (i % 2 == 0) {
                   return (
-                    <div id="left_column" key={menu.precio}>
+                    <div id="left_column" key={menu.price}>
                       <MenuPlates
                         i={i}
                         image={menu.image}
-                        precio={menu.precio}
-                        plate={menu.plato}
-                        ingredients={menu.ingredientes}
+                        precio={menu.price}
+                        plate={menu.name}
+                        ingredients={menu.ingredient}
                         key={i}
-                        description={menu.descripcion}
+                        description={menu.description}
                       />
                     </div>
                   );
                 } else {
                   return (
-                    <div id="right_column" key={menu.precio}>
+                    <div id="right_column" key={menu.price}>
                       <MenuPlates
                         i={i}
                         image={menu.image}
-                        precio={menu.precio}
-                        plate={menu.plato}
-                        ingredients={menu.ingredientes}
+                        precio={menu.price}
+                        plate={menu.name}
+                        ingredients={menu.ingredient}
                         key={i}
-                        description={menu.descripcion}
+                        description={menu.description}
                       />
                     </div>
                   );

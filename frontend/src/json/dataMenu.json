@@ -1,112 +1,112 @@
 {
   "objMenu": [
     {
-      "id": 1,
+      "restaurante_id": 1,
+      "name": "Lobster Bisquet",
+      "description": "Lobster Bisque o sopa de langosta, una clásica sopa cremosa y suave, altamente sazonada, hecha de langosta y aromáticos, plato perfecto para toda ocasión y que se sirve como primer plato. Una indulgencia de ensueño de una experiencia gastronómica de cinco estrellas.",
       "image": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/menu%2Flobster-bisque.jpg?alt=media&token=6cad24de-c960-4ec4-946d-56e5a072a311",
-      "plato": "Lobster Bisquet",
-      "ingredientes": "langosta con cebolla, apio, laurel, perejil, ajo y tomate frito.",
-      "descripcion": "Lobster Bisque o sopa de langosta, una clásica sopa cremosa y suave, altamente sazonada, hecha de langosta y aromáticos, plato perfecto para toda ocasión y que se sirve como primer plato. Una indulgencia de ensueño de una experiencia gastronómica de cinco estrellas.",
-      "precio": "9.98",
-      "cantidad": 0
+      "ingredient": "langosta con cebolla, apio, laurel, perejil, ajo y tomate frito.",
+      "price": "9.98",
+      "amount": 0
     },
     {
-      "id": 2,
+      "restaurante_id": 1,
+      "name": "Bread barrel",
+      "description": "Pan artesanal, sin corteza, acabado de cocinar y luego expuesto a la parilla, perfecto para degustar con todo tipo de carnes asadas o a la plancha.",
       "image": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/menu%2FBread-Barrel.jpg?alt=media&token=5c7ab5db-3029-4574-825e-44e34216aeb2",
-      "plato": "Bread barrel",
-      "ingredientes": "Pan artesanal.",
-      "descripcion": "Pan artesanal, sin corteza, acabado de cocinar y luego expuesto a la parilla, perfecto para degustar con todo tipo de carnes asadas o a la plancha.",
-      "precio": "6.95",
-      "cantidad": 0
+      "ingredient": "Pan artesanal.",
+      "price": "6.95",
+      "amount": 0
     },
     {
-      "id": 3,
+      "restaurante_id": 1,
+      "name": "Crab Cake",
+      "description": "Crab Cake o Pastel de cangrejo, un delicioso plato compuesto por carne de cangrejo, pastas al punto, y sazonado de manera que puedas disfrutar de esta comida de mar en todo su esplendor.",
       "image": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/menu%2FCrab-Cake.jpeg?alt=media&token=0a1e8df3-a5f9-46fc-b63b-9a94a2b2de72",
-      "plato": "Crab Cake",
-      "ingredientes": "Carne de cangrejo, huevo, cebolla, ajo, pastas.",
-      "descripcion": "Crab Cake o Pastel de cangrejo, un delicioso plato compuesto por carne de cangrejo, pastas al punto, y sazonado de manera que puedas disfrutar de esta comida de mar en todo su esplendor.",
-      "precio": "7.95",
-      "cantidad": 0
+      "ingredient": "Carne de cangrejo, huevo, cebolla, ajo, pastas.",
+      "price": "7.95",
+      "amount": 0
     },
     {
-      "id": 4,
+      "restaurante_id": 1,
+      "name": "Caesar Selections",
+      "description": "La Caesar Selection es una ensalada tipica italiana, plato ligero, preparada con todos sus ingredientes totalmente frescos, permitiendo conservar todos sus sabores y degustarlos totalmente, perfecto plato veraniego para los amantes de la comida.",
       "image": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/menu%2FCaesar-Selections.jpeg?alt=media&token=bb65bdc8-5e5d-4b32-a879-468a6fe4acaf",
-      "plato": "Caesar Selections",
-      "ingredientes": "Lechuga italiana, pastas, jitomates, queso, vinagre.",
-      "descripcion": "La Caesar Selection es una ensalada tipica italiana, plato ligero, preparada con todos sus ingredientes totalmente frescos, permitiendo conservar todos sus sabores y degustarlos totalmente, perfecto plato veraniego para los amantes de la comida.",
-      "precio": "8.95",
-      "cantidad": 0
+      "ingredient": "Lechuga italiana, pastas, jitomates, queso, vinagre.",
+      "price": "8.95",
+      "amount": 0
     },
     {
-      "id": 5,
+      "restaurante_id": 1,
+      "name": "Bandeja paisa",
+      "description": "Delicioso plato típico representativo de Colombia, propio de la gastronomía antioqueña, conformado por una gran cantidad de ingredientes completamente deliciosos para el paladar de cualquier persona, y que te dejara completamente satisfecho de principio a fin.",
       "image": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/menu%2FBandeja-Paisa.jpg?alt=media&token=45fc866e-d810-410d-b75e-de02ca55f768",
-      "plato": "Bandeja paisa",
-      "ingredientes": "Frijoles, arroz blanco, carne en polvo, chorizo, tajadas de platano, huevo frito, aguacate, arepa.",
-      "descripcion": "Delicioso plato típico representativo de Colombia, propio de la gastronomía antioqueña, conformado por una gran cantidad de ingredientes completamente deliciosos para el paladar de cualquier persona, y que te dejara completamente satisfecho de principio a fin.",
-      "precio": "14.95",
-      "cantidad": 0
+      "ingredient": "Frijoles, arroz blanco, carne en polvo, chorizo, tajadas de platano, huevo frito, aguacate, arepa.",
+      "price": "14.95",
+      "amount": 0
     },
     {
-      "id": 6,
+      "restaurante_id": 1,
+      "name": "Cocido Boyacense",
+      "description": "Considerado un plato típico de Colombia, proveniente del Altiplano cundiboyacense, como lo refiere su nombre, proviene de la época de la colonia, hecho a base de diferentes carnes y túberculos, haciéndolo una delicia excepcional.",
       "image": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/menu%2FCocido.jpg?alt=media&token=ad0e8d29-0016-4955-8ee2-591b987fdbcb",
-      "plato": "Cocido Boyacense",
-      "ingredientes": "Carne de cerdo, carne de res, pollo, cubios, chaguas, frijol verde, mazorca.",
-      "descripcion": "Considerado un plato típico de Colombia, proveniente del Altiplano cundiboyacense, como lo refiere su nombre, proviene de la época de la colonia, hecho a base de diferentes carnes y túberculos, haciéndolo una delicia excepcional.",
-      "precio": "9.99",
-      "cantidad": 0
+      "ingredient": "Carne de cerdo, carne de res, pollo, cubios, chaguas, frijol verde, mazorca.",
+      "price": "9.99",
+      "amount": 0
     },
     {
-      "id": 7,
+      "restaurante_id": 1,
       "image": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/menu%2FTuscan-Grilled.jpg?alt=media&token=5ce504c1-5948-43a0-811b-727c90126f0f",
-      "plato": "Tuscan Grilled",
-      "ingredientes": "Chuletón de ternera, aceite de oliva virgen, pimienta negra molida, romero fresco, ajo.",
-      "descripcion": "Delicioso asado a la parrilla, bañado en adobo de aceite de oliva virgen, romero y ajo, constituyendo un hermoso sabor y perfecto para cualquier comida.",
-      "precio": "9.95",
-      "cantidad": 0
+      "name": "Tuscan Grilled",
+      "ingredient": "Chuletón de ternera, aceite de oliva virgen, pimienta negra molida, romero fresco, ajo.",
+      "description": "Delicioso asado a la parrilla, bañado en adobo de aceite de oliva virgen, romero y ajo, constituyendo un hermoso sabor y perfecto para cualquier comida.",
+      "price": "9.95",
+      "amount": 0
     },
     {
-      "id": 8,
+      "restaurante_id": 1,
+      "name": "Mozzarella Stick",
+      "description": "Deliciosos palitos empanados rellenos de queso mozarella, perfectos como aperitivos de entrada para cualquier comida.",
       "image": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/menu%2FMozarella-Stick.jpg?alt=media&token=5dd73df7-e28b-4c43-863b-d1d22b202b4e",
-      "plato": "Mozzarella Stick",
-      "ingredientes": "Queso mozarella, salsa de tomate, salsa de ciruela.",
-      "descripcion": "Deliciosos palitos empanados rellenos de queso mozarella, perfectos como aperitivos de entrada para cualquier comida.",
-      "precio": "4.95",
-      "cantidad": 0
+      "ingredient": "Queso mozarella, salsa de tomate, salsa de ciruela.",
+      "price": "4.95",
+      "amount": 0
     },
     {
-      "id": 9,
+      "restaurante_id": 1,
+      "name": "Greek Salad",
+      "description": "Exquisita, ligera y nutritiva ensalada griega elaborada con todos los ingredientes característicos de este país, contiene menos de 360 calorías, la cual es un plato perfecto para complementar cualquier otro plato que prefieras.",
       "image": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/menu%2FGreek-Salad.jpeg?alt=media&token=5ddc9251-8635-40b4-8d35-d8379d16b6a4",
-      "plato": "Greek Salad",
-      "ingredientes": "Tomate, pepino, pimiento, cebolla roja, sal, pimienta roja, orégano, aceite de oliva.",
-      "descripcion": "Exquisita, ligera y nutritiva ensalada griega elaborada con todos los ingredientes característicos de este país, contiene menos de 360 calorías, la cual es un plato perfecto para complementar cualquier otro plato que prefieras.",
-      "precio": "8.95",
-      "cantidad": 0
+      "ingredient": "Tomate, pepino, pimiento, cebolla roja, sal, pimienta roja, orégano, aceite de oliva.",
+      "price": "8.95",
+      "amount": 0
     },
     {
-      "id": 10,
+      "restaurante_id": 1,
+      "name": "Lasagna",
+      "description": "Lasagna o lasaña, delicioso plato típico de la cocina italiana, elaborado a partir de finas láminas de pasta rellanadas con carne, tómate, verduras, cebollas y cocinado en aceite de oliva, tiene combinación de sabores perfecta y que satisface completamente a todo aquel que la disfrute.",
       "image": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/menu%2FLasagna.jpg?alt=media&token=4df80d13-7488-484c-a16c-dd0d756e4f02",
-      "plato": "Lasagna",
-      "ingredientes": "Pasta, carne al gusto (pollo, cerdo, mixta), tómate, cebolla, aceite de oliva.",
-      "descripcion": "Lasagna o lasaña, delicioso plato típico de la cocina italiana, elaborado a partir de finas láminas de pasta rellanadas con carne, tómate, verduras, cebollas y cocinado en aceite de oliva, tiene combinación de sabores perfecta y que satisface completamente a todo aquel que la disfrute.",
-      "precio": "9.95",
-      "cantidad": 0
+      "ingredient": "Pasta, carne al gusto (pollo, cerdo, mixta), tómate, cebolla, aceite de oliva.",
+      "price": "9.95",
+      "amount": 0
     },
     {
-      "id": 11,
+      "restaurante_id": 1,
+      "name": "Pizza",
+      "description": "Deliciosa pizza italiana crujiente, servida caliente, con ingredientes al gusto y perfecta para compartir para el disfrute de todos.",
       "image": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/menu%2FPizza.jpg?alt=media&token=49aa2800-2f6b-4328-a14f-a3e618f88be6",
-      "plato": "Pizza",
-      "ingredientes": "Pan horneado, queso mozarella, salsa de tomate, salami, tiras de cebolla, jamón.",
-      "descripcion": "Deliciosa pizza italiana crujiente, servida caliente, con ingredientes al gusto y perfecta para compartir para el disfrute de todos.",
-      "precio": "11.95",
-      "cantidad": 0
+      "ingredient": "Pan horneado, queso mozarella, salsa de tomate, salami, tiras de cebolla, jamón.",
+      "price": "11.95",
+      "amount": 0
     },
     {
-      "id": 12,
+      "restaurante_id": 1,
+      "name": "Ajiaco santafereño",
+      "description": "Plato típico de Santa Fe de Bogotá, una sopa deliciosa por su combinación de tubérculos y pollo, rememorando la herencia de sabores de la comida indígena y española. Una total exquisitez.",
       "image": "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/menu%2FAjiaco-santafereno.jpg?alt=media&token=31c0ed3a-e4ce-49e1-bea7-8b2e62964cf7",
-      "plato": "Ajiaco santafereño",
-      "ingredientes": "Pollo, guascas, papa sabanera, papa pastusa, papa criolla, arracacha, cebolla, ajo, mazorca.",
-      "descripcion": "Plato típico de Santa Fe de Bogotá, una sopa deliciosa por su combinación de tubérculos y pollo, rememorando la herencia de sabores de la comida indígena y española. Una total exquisitez.",
-      "precio": "6.95",
-      "cantidad": 0
+      "ingredient": "Pollo, guascas, papa sabanera, papa pastusa, papa criolla, arracacha, cebolla, ajo, mazorca.",
+      "price": "6.95",
+      "amount": 0
     }
   ]
 }

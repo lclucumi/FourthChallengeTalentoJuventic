@@ -80,7 +80,8 @@ function SignIn() {
                         <Button variant="success" size="md" onClick={login}>
                           Iniciar Sesión
                         </Button>
-                        <Button variant="success" size="md" onClick={logout}>
+                        {"  "}
+                        <Button variant="danger" size="md" onClick={logout}>
                           Cerrar Sesión
                         </Button>
                       </Col>

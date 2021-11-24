@@ -23,7 +23,7 @@ namespace backend.Controllers
         public JsonResult Get()
         {
             string query = @"
-                           select id,cliente_id,servicio_id,date_reserva
+                           select id,cliente_id,servicio_id,date_reserva,state
                            from
                            reserva";
             //Tablas en memoria
@@ -89,6 +89,7 @@ namespace backend.Controllers
                         cliente_id =@ReservaClienteId,
                         servicio_id =@ReservaPlatoId,
                         date_reserva =@ReservaFecha,
+                        state =@ReservaEstado,
                         where id =@ReservaId;
             ";
 
@@ -104,6 +105,7 @@ namespace backend.Controllers
                     myCommand.Parameters.AddWithValue("@ReservaClienteId", res.cliente_id);
                     myCommand.Parameters.AddWithValue("@ReservaServicioId", res.servicio_id);
                     myCommand.Parameters.AddWithValue("@ReservaFecha", res.date_reserva);
+                    myCommand.Parameters.AddWithValue("@ReservaEstado", res.state);
 
                     myReader = myCommand.ExecuteReader();
                     table.Load(myReader);
@@ -122,9 +124,9 @@ namespace backend.Controllers
         {
             string query = @"
                         insert into reserva 
-                        (cliente_id,servicio_id,date_reserva) 
+                        (cliente_id,servicio_id,date_reserva,state) 
                         values
-                         (@ReservaClienteId,@ReservaServicioId,@ReservaFecha) ;
+                         (@ReservaClienteId,@ReservaServicioId,@ReservaFecha,@ReservaEstado) ;
                         
             ";
 
@@ -139,6 +141,7 @@ namespace backend.Controllers
                     myCommand.Parameters.AddWithValue("@ReservaClienteId", res.cliente_id);
                     myCommand.Parameters.AddWithValue("@ReservaServicioId", res.servicio_id);
                     myCommand.Parameters.AddWithValue("@ReservaFecha", res.date_reserva);
+                    myCommand.Parameters.AddWithValue("@ReservaEstado", res.state);
 
                     myReader = myCommand.ExecuteReader();
                     table.Load(myReader);

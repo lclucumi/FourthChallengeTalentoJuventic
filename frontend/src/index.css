@@ -322,10 +322,30 @@ h3 {
 }
 
 #loginCard,
-#registerCard {
+#registerCard,
+#manager {
   padding-top: 110px;
   padding-bottom: 110px;
   background-image: "../src/images/events-bg.jpg";
+}
+
+.manager-title,
+span {
+  color: #ffb03b;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+}
+
+#manager,
+.MuiButtonBase-root {
+  font-family: Helvetica;
+}
+
+.manager-title,
+h2 {
+  color: #000;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
 }
 
 #sigIn {

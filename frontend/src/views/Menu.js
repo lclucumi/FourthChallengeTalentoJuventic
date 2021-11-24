@@ -3,6 +3,7 @@ import MenuPlates from "./menuComponents/MenuPlates";
 import { Row } from "react-bootstrap";
 import Header from "./Header";
 import Footer from "./Footer";
+import ManagerSite from "./ManagerSite";
 class Menu extends React.Component {
   constructor(props) {
     super(props);

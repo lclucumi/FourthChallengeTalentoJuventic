@@ -159,6 +159,11 @@ class Header extends React.Component {
                       Mapa del sitio
                     </a>
                   </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="/manager">
+                      Manager
+                    </a>
+                  </li>
                   <li className="nav-item dropdown">
                     <div
                       className="collapse navbar-collapse"

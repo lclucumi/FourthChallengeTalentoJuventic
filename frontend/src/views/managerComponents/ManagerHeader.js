@@ -1,5 +1,5 @@
 import React from "react";
-class Header extends React.Component {
+class ManagerHeader extends React.Component {
   emptyCar(e) {
     e.preventDefault();
     while (document.querySelector("#car-list tbody").firstChild) {
@@ -164,6 +164,11 @@ class Header extends React.Component {
                       Comentarios
                     </a>
                   </li>
+                  <li className="nav-item">
+                    <a className="nav-link" href="/manager">
+                      Manager
+                    </a>
+                  </li>
                   <li className="nav-item dropdown">
                     <div
                       className="collapse navbar-collapse"
@@ -251,4 +256,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
+export default ManagerHeader;

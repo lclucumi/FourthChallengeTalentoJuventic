@@ -12,6 +12,7 @@ import ContactUs from "./views/ContactUs";
 import SiteMap from "./views/SiteMap";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ManagerSite from "./views/ManagerSite";
+import Comments from "./views/Comments";
 
 function App() {
   return (
@@ -46,6 +47,9 @@ function App() {
         </Route>
         <Route exact path="/manager">
           <ManagerSite />
+        </Route>
+        <Route exact path="/comment">
+          <Comments />
         </Route>
       </Switch>
     </BrowserRouter>

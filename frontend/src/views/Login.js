@@ -26,9 +26,13 @@ function SignIn() {
         loginPassword
       );
       alert("¡Bienvenido!");
-      window.location.href = "/";
+      if (loginEmail == "luz.lucumi@correounivalle.edu.co") {
+        window.location.href = "/Manager";
+      } else {
+        window.location.href = "/";
+      }
     } catch (error) {
-      alert("¡Error! Verifica tus datos");
+      alert("¡Error! tu contraseña debe tener al menos 6 caracteres");
     }
   };
 
@@ -76,12 +80,24 @@ function SignIn() {
                       </Col>
                     </Row>
                     <Row>
+                      {/* {user?.email} */}
                       <Col id="sigIn">
-                        <Button variant="success" size="md" onClick={login}>
+                        <h6>
+                          ¡Regístrate dando <a href="/signin">click aquí</a>!
+                        </h6>
+                        <Button
+                          variant="outline-success"
+                          size="md"
+                          onClick={login}
+                        >
                           Iniciar Sesión
                         </Button>
                         {"  "}
-                        <Button variant="danger" size="md" onClick={logout}>
+                        <Button
+                          variant="outline-danger"
+                          size="md"
+                          onClick={logout}
+                        >
                           Cerrar Sesión
                         </Button>
                       </Col>

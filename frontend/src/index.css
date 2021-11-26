@@ -79,7 +79,7 @@ header .car-icon {
 /*--------------------------------------------------------------
 # Sección de us
 --------------------------------------------------------------*/
-#imagen {
+#us #imagen {
   padding: 40px 0 40px;
   justify-content: center;
   margin-left: 2px;
@@ -349,7 +349,7 @@ h2 {
 }
 
 #sigIn {
-  padding-top: 40px;
+  padding-top: 26px;
 }
 
 #passLogin {
@@ -699,4 +699,31 @@ Form envío
 -----------------------------------------------*/
 #buy-process #total {
   font-weight: bold;
+}
+
+/*-----------------------------------------------
+Form manager
+-----------------------------------------------*/
+#button_manager {
+  display: flex;
+  justify-content: center;
+}
+
+#comment_data {
+  display: flex;
+  justify-content: left;
+}
+
+.comment_footer {
+  margin-left: 60px;
+}
+
+#comment_message {
+  margin-left: 18px;
+  margin-top: 10px;
+}
+
+#comment_element {
+  width: 46px;
+  height: 46px;
 }

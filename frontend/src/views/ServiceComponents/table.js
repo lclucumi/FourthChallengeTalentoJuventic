@@ -86,7 +86,7 @@ class BasicFiltering extends React.Component {
         options={{
           filtering: this.props.filter,
           headerStyle: {
-            backgroundColor: "#039be5",
+            backgroundColor: this.props.color,
             color: "#FFF",
             fontWeight: "bold",
             textAlign: "center",

@@ -201,19 +201,20 @@ class Header extends React.Component {
                               </thead>
                               <tbody></tbody>
                             </table>
-
+                            {"  "}
                             <a
                               href="#"
                               id="empty-car"
-                              className="btn btn-danger btn-block"
+                              className="btn btn-outline-danger btn-block"
                               onClick={(e) => this.emptyCar(e)}
                             >
                               Vaciar Carrito
                             </a>
+                            {"  "}
                             <a
                               href="#"
                               id="buy-process"
-                              className="btn btn-success btn-block"
+                              className="btn btn-outline-success btn-block"
                               onClick={(e) => this.orderProcess(e)}
                             >
                               Finalizar pedido

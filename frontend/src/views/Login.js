@@ -25,10 +25,11 @@ function SignIn() {
         loginEmail,
         loginPassword
       );
-      alert("¡Bienvenido!");
       if (loginEmail == "luz.lucumi@correounivalle.edu.co") {
+        alert("¡Bienvenido gerente!");
         window.location.href = "/Manager";
       } else {
+        alert("¡Bienvenido!");
         window.location.href = "/";
       }
     } catch (error) {
@@ -45,7 +46,7 @@ function SignIn() {
         <Row className="justify-content-center">
           <Col md="4">
             <Card>
-              <Card.Header id="headerLogin">Login</Card.Header>
+              <Card.Header id="headerLogin">Login </Card.Header>
               <Card.Body>
                 <Form>
                   <Col sm="12">
@@ -84,7 +85,9 @@ function SignIn() {
                       <Col id="sigIn">
                         <h6>
                           ¡Regístrate dando <a href="/signin">click aquí</a>!
+                          Volver a <a href="/">inicio</a>
                         </h6>
+                        <hr />
                         <Button
                           variant="outline-success"
                           size="md"
@@ -101,6 +104,7 @@ function SignIn() {
                           Cerrar Sesión
                         </Button>
                       </Col>
+                      <br />
                     </Row>
                   </Col>
                 </Form>

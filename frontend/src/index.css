@@ -727,3 +727,9 @@ Form manager
   width: 46px;
   height: 46px;
 }
+
+#img_text {
+  margin-left: 26px;
+  margin-top: 20px;
+  width: 90%;
+}

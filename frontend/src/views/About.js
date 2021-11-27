@@ -9,11 +9,13 @@ class About extends React.Component {
     super(props);
     this.state = {
       dataAbout: [],
+      dataDescription: "",
     };
   }
 
   componentDidMount() {
     this.fetchData();
+    this.fetchDataInfo();
   }
 
   fetchData() {
@@ -21,6 +23,15 @@ class About extends React.Component {
       .then((response) => response.json())
       .then((data) => {
         this.setState({ dataAbout: data });
+      })
+      .catch((error) => console.log(error));
+  }
+
+  fetchDataInfo() {
+    fetch("http://localhost:5016/api/Restaurante")
+      .then((response) => response.json())
+      .then((data) => {
+        this.setState({ dataDescription: data[0].description });
       })
       .catch((error) => console.log(error));
   }
@@ -48,28 +59,7 @@ class About extends React.Component {
                 <h3>
                   Nuestra <strong> Historia </strong>
                 </h3>
-                <p>
-                  Dunkers inicio operaciones en 2021, con la inauguración de su
-                  primer restaurante de comida tradicional colombiana. El estilo
-                  original de su decoración, que combina elementos tradicionales
-                  y europeos, nació en ese local.
-                </p>
-                <p>
-                  Desde que se inauguró el primer restaurante se ha puesto un
-                  compromiso que ha sido satisfacer los gustos y necesidades con
-                  un buen servicio y calidad del producto. Por ello se usan
-                  materias primas seleccionadas para la preparación de nuestros
-                  platos, además de investigar e innovar con platos nuevos.
-                </p>
-                <p>
-                  Nuestros clientes son la razón de ser, pero la gente es la
-                  fuente de nuestra fortaleza. El capital humano, su compromiso,
-                  su profesionalismo y dedicación son factores que nos ayudan a
-                  tener éxito y poder crecer como empresa, Dunkers posee una
-                  variedad de menú extensa como su clientela, la cual busca
-                  satisface diversos gustos, esperamos que el menú crezca con el
-                  pasar de los años.
-                </p>
+                <p>{this.state.dataDescription}</p>
               </div>
             </div>
           </div>

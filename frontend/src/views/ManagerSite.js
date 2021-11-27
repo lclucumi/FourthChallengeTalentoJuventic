@@ -5,6 +5,8 @@ import ManagerSitePlato from "./managerComponents/ManagerSitePlato";
 import ManagerSiteEmpleado from "./managerComponents/ManagerSiteEmpleado";
 import ManagerSiteServicio from "./managerComponents/ManagerSiteServicio";
 import ManagerSiteComentario from "./managerComponents/ManagerSiteComentario";
+import ManagerReserva from "./managerComponents/ManagerReserva";
+import ManagerText from "./managerComponents/ManagerText";
 import { ButtonToolbar, Button, ButtonGroup, Row, Col } from "react-bootstrap";
 class ManagerSite extends React.Component {
   constructor(props) {
@@ -14,6 +16,8 @@ class ManagerSite extends React.Component {
       empleado: false,
       servicio: false,
       comentario: false,
+      texto: false,
+      reserva: false,
     };
   }
   render() {
@@ -39,6 +43,8 @@ class ManagerSite extends React.Component {
                         empleado: false,
                         servicio: false,
                         comentario: false,
+                        text: false,
+                        reserva: false,
                       })
                     }
                   >
@@ -54,6 +60,8 @@ class ManagerSite extends React.Component {
                         empleado: true,
                         servicio: false,
                         comentario: false,
+                        text: false,
+                        reserva: false,
                       })
                     }
                   >
@@ -69,13 +77,15 @@ class ManagerSite extends React.Component {
                         empleado: false,
                         servicio: true,
                         comentario: false,
+                        text: false,
+                        reserva: false,
                       })
                     }
                   >
                     Servicios
                   </Button>
                 </ButtonGroup>
-                <ButtonGroup aria-label="Fourth group">
+                <ButtonGroup className="me-2" aria-label="Fourth group">
                   <Button
                     variant="outline-info"
                     onClick={() =>
@@ -84,10 +94,46 @@ class ManagerSite extends React.Component {
                         empleado: false,
                         servicio: false,
                         comentario: true,
+                        text: false,
+                        reserva: false,
                       })
                     }
                   >
                     Comentarios
+                  </Button>
+                </ButtonGroup>
+                <ButtonGroup className="me-2" aria-label="Fourth group">
+                  <Button
+                    variant="outline-dark"
+                    onClick={() =>
+                      this.setState({
+                        plato: false,
+                        empleado: false,
+                        servicio: false,
+                        comentario: false,
+                        text: true,
+                        reserva: false,
+                      })
+                    }
+                  >
+                    Texto
+                  </Button>
+                </ButtonGroup>
+                <ButtonGroup aria-label="Fourth group">
+                  <Button
+                    variant="outline-success"
+                    onClick={() =>
+                      this.setState({
+                        plato: false,
+                        empleado: false,
+                        servicio: false,
+                        comentario: false,
+                        text: false,
+                        reserva: true,
+                      })
+                    }
+                  >
+                    Reserva
                   </Button>
                 </ButtonGroup>
               </ButtonToolbar>
@@ -102,6 +148,10 @@ class ManagerSite extends React.Component {
             <ManagerSiteServicio />
           ) : this.state.comentario ? (
             <ManagerSiteComentario />
+          ) : this.state.text ? (
+            <ManagerText />
+          ) : this.state.reserva ? (
+            <ManagerReserva />
           ) : null}
           <br />
         </section>

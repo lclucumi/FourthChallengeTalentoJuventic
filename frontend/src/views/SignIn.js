@@ -8,6 +8,25 @@ import {
 } from "firebase/auth";
 import { auth } from "./firebase-config";
 
+function dataCreate(username, password) {
+  fetch("http://localhost:5016/api/Cliente", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+    },
+    body: JSON.stringify({
+      username: username,
+      password: password,
+    }),
+  })
+    .then((response) => {
+      response.json();
+      console.log(response);
+    })
+    .catch((error) => console.log(error));
+}
+
 function SignIn() {
   const [registerEmail, setRegisterEmail] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
@@ -27,7 +46,8 @@ function SignIn() {
         registerEmail,
         registerPassword
       );
-      alert("¡Se ha registrado exitosamente!");
+      alert("¡Se ha registrado exitosamente!", auth);
+      dataCreate(registerEmail, registerPassword);
       window.location.href = "/login";
     } catch (error) {
       alert("¡Error! Verifica tus datos");
@@ -79,8 +99,19 @@ function SignIn() {
                   </Row>
                   <Row>
                     <Col id="sigIn">
-                      <Button variant="success" size="md" onClick={register}>
+                      <h6>
+                        Ir a página de <a href="/">inicio</a>
+                      </h6>
+                      <Button
+                        variant="outline-success"
+                        size="md"
+                        onClick={register}
+                      >
                         Registrar
+                      </Button>
+                      {"  "}
+                      <Button variant="outline-warning" size="md" href="/login">
+                        Iniciar sesión
                       </Button>
                     </Col>
                   </Row>

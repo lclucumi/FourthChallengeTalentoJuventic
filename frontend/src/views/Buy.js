@@ -300,14 +300,17 @@ class Buy extends React.Component {
 
                   <div className="row justify-content-between">
                     <div className="col-md-4 mb-2">
-                      <a href="/menu" className="btn btn-info btn-block">
+                      <a
+                        href="/menu"
+                        className="btn btn-outline-primary btn-block"
+                      >
                         Seguir comprando
                       </a>
                     </div>
                     <div className="col-xs-12 col-md-4">
                       <button
                         href=""
-                        className="btn btn-success btn-block"
+                        className="btn btn-outline-success btn-block"
                         type="submit"
                         id="process"
                         onClick={(e) => this.purchaseProcess(e)}

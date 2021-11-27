@@ -124,6 +124,7 @@ export default function InfoModal(props) {
                     required
                   />
                 </div>
+                {console.log(document.getElementById)}
                 <div className="field">
                   <label htmlFor="hora">hora</label>
                   <input

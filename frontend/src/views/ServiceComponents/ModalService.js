@@ -2,11 +2,51 @@ import React, { useState } from "react";
 import { Modal, Row, Col, Form } from "react-bootstrap";
 import emailjs from "emailjs-com";
 
+function dataCreate(
+  service,
+  name,
+  email,
+  phone,
+  indication,
+  date,
+  hour,
+  people,
+  state
+) {
+  fetch("http://localhost:5016/api/Reserva", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+    },
+    body: JSON.stringify({
+      servicio_id: service,
+      name: name,
+      email: email,
+      phone: phone,
+      indication: indication,
+      date_reserva: date,
+      hour: hour,
+      people: people,
+      state: state,
+    }),
+  })
+    .then((response) => {
+      response.json();
+      console.log(response);
+    })
+    .then(() => {
+      alert("¡Reserva creada! :D");
+    })
+    .catch((error) => console.log(error));
+}
+
 export default function InfoModal(props) {
   const serviceID = "default_service";
   const templateID = "template_6mr32th";
-  /** Servicios */
+  const [data] = useState(props);
 
+  /** Servicios */
   function dataService(e) {
     e.preventDefault();
     let btn = document.getElementById("button");
@@ -23,6 +63,17 @@ export default function InfoModal(props) {
         () => {
           btn.value = "Reservar";
           alert("Reservado!");
+          dataCreate(
+            data.id,
+            nombre_res,
+            correo_res,
+            telefono_res,
+            indicacion_res,
+            fecha_res,
+            hora_res,
+            persona_res,
+            "En espera"
+          );
           localStorage.clear();
         },
         (err) => {
@@ -33,7 +84,13 @@ export default function InfoModal(props) {
       );
   }
 
-  const [data] = useState(props);
+  const [nombre_res, nombre] = useState("");
+  const [correo_res, correo] = useState("");
+  const [telefono_res, telefono] = useState(0);
+  const [indicacion_res, indicaciones] = useState("");
+  const [hora_res, hora] = useState("");
+  const [persona_res, personas] = useState(0);
+  const [fecha_res, fecha] = useState("");
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -66,6 +123,9 @@ export default function InfoModal(props) {
                     id="nombre"
                     maxLength="50"
                     minLength="20"
+                    onChange={(event) => {
+                      nombre(event.target.value);
+                    }}
                     required
                   />
                 </div>
@@ -79,6 +139,9 @@ export default function InfoModal(props) {
                     aria-describedby="emailHelp"
                     maxLength="60"
                     minLength="13"
+                    onChange={(event) => {
+                      correo(event.target.value);
+                    }}
                     required
                   />
                 </div>
@@ -97,6 +160,9 @@ export default function InfoModal(props) {
                     name="telefono"
                     pattern="[0-9]{10}"
                     id="telefono"
+                    onChange={(event) => {
+                      telefono(event.target.value);
+                    }}
                     required
                   />
                   <div className="invalid-feedback">
@@ -111,27 +177,36 @@ export default function InfoModal(props) {
                     id="indicaciones"
                     maxLength="100"
                     minLength="20"
+                    onChange={(event) => {
+                      indicaciones(event.target.value);
+                    }}
                     required
                   ></textarea>
                 </div>
                 <div className="field">
-                  <label htmlFor="fecha">fecha</label>
+                  <label htmlFor="fecha">Fecha</label>
                   <input
                     className="form-control"
                     type="date"
                     name="fecha"
                     id="fecha"
+                    onChange={(event) => {
+                      fecha(event.target.value);
+                    }}
                     required
                   />
                 </div>
                 {console.log(document.getElementById)}
                 <div className="field">
-                  <label htmlFor="hora">hora</label>
+                  <label htmlFor="hora">Hora</label>
                   <input
                     className="form-control"
                     type="time"
                     name="hora"
                     id="hora"
+                    onChange={(event) => {
+                      hora(event.target.value);
+                    }}
                     required
                   />
                 </div>
@@ -143,6 +218,9 @@ export default function InfoModal(props) {
                     name="personas"
                     id="personas"
                     maxLength="3"
+                    onChange={(event) => {
+                      personas(event.target.value);
+                    }}
                     required
                   />
                 </div>

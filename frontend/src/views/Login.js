@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Card, Row, Col, FormGroup, Form, Button } from "react-bootstrap";
 import {
-  createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   onAuthStateChanged,
   signOut,

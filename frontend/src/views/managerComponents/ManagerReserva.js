@@ -7,16 +7,45 @@ class ManagerReserva extends React.Component {
     super(props);
     this.state = {
       dataDescription: [],
+      dataServicio: [],
       dataCard: [],
+      nombre_res: "",
+      correo_res: "",
+      telefono_res: 0,
+      indicacion_res: "",
+      hora_res: "",
+      persona_res: 0,
+      servicio_res: 0,
       fecha_reserva_res: "",
       estado_res: "",
-      cliente_res: 5,
-      servicio_res: 1,
+      id_res: 0,
     };
   }
 
   componentDidMount() {
+    this.fetchDataServicio();
     this.fetchData();
+  }
+
+  fetchDataServicio() {
+    fetch("http://localhost:5016/api/Servicio")
+      .then((response) => response.json())
+      .then((data) => {
+        let columnsDataServicio = [];
+        data.forEach((servicio) => {
+          let object = {};
+          object["id"] = servicio.id;
+          object["nombre"] = servicio.name;
+          object["descripcion"] = servicio.description;
+          object["imagen"] = <img src={servicio.image} width="100px"></img>;
+          object["img"] = servicio.image;
+          object["precio"] = servicio.price;
+          object["texto"] = servicio.text;
+          columnsDataServicio.push(object);
+        });
+        this.setState({ dataServicio: columnsDataServicio });
+      })
+      .catch((error) => console.log(error));
   }
 
   fetchData() {
@@ -27,9 +56,21 @@ class ManagerReserva extends React.Component {
         data.forEach((reserva) => {
           let object = {};
           object["id"] = reserva.id;
-          object["cliente_id"] = reserva.cliente_id;
           object["servicio_id"] = reserva.servicio_id;
+          object["nombre"] = reserva.name;
+          object["correo"] = reserva.email;
+          object["telefono"] = reserva.phone;
+          object["indicacion"] = reserva.indication;
+          object["fecha"] = reserva.date_reserva;
+          object["hora"] = reserva.hour;
+          object["persona"] = reserva.people;
           object["estado"] = reserva.state;
+          this.state.dataServicio.map((servicio) => {
+            if (servicio.id == reserva.servicio_id) {
+              object["nombre_servicio"] = servicio.nombre;
+            }
+          });
+          console.log(object["servicio_id"], object["correo"]);
           columnsDataReserva.push(object);
         });
         this.setState({
@@ -40,7 +81,6 @@ class ManagerReserva extends React.Component {
   }
 
   dataEdit = () => {
-    console.log(this.state.estado_res);
     fetch("http://localhost:5016/api/Reserva", {
       method: "PUT",
       headers: {
@@ -48,10 +88,15 @@ class ManagerReserva extends React.Component {
         "Access-Control-Allow-Origin": "*",
       },
       body: JSON.stringify({
-        id: 2,
-        cliente_id: this.state.cliente_res,
+        id: this.state.id_res,
         servicio_id: this.state.servicio_res,
-        date_reserva: "2021-11-17",
+        name: this.state.nombre_res,
+        email: this.state.correo_res,
+        phone: this.state.telefono_res,
+        indication: this.state.indicacion_res,
+        date_reserva: this.state.fecha_reserva_res,
+        hour: this.state.hora_res,
+        people: this.state.persona_res,
         state: this.state.estado_res,
       }),
     })
@@ -68,10 +113,17 @@ class ManagerReserva extends React.Component {
   test = (data) => {
     this.setState({
       dataCard: data,
+      id: data.id,
       fecha_reserva_res: data.fecha_reserva,
       estado_res: data.estado,
-      cliente_res: data.cliente_id,
+      correo_res: data.correo,
       servicio_res: data.servicio_id,
+      nombre_res: data.nombre,
+      telefono_res: data.telefono,
+      indicacion_res: data.indicacion,
+      hora_res: data.hora,
+      persona_res: data.persona,
+      fecha_reserva_res: data.fecha,
     });
   };
 
@@ -86,7 +138,7 @@ class ManagerReserva extends React.Component {
       <>
         <Row className="justify-content-md-center">
           <Col md={1}></Col>
-          <Col md={5}>
+          <Col md={6}>
             <Card>
               <Card.Header>
                 <strong>Reserva</strong>
@@ -97,19 +149,21 @@ class ManagerReserva extends React.Component {
                   <BasicFiltering
                     test={this.test}
                     columns={[
-                      { title: "CLIENTE", field: "cliente_id" },
+                      { title: "CLIENTE", field: "nombre" },
+                      { title: "SERVICIO", field: "nombre_servicio" },
+                      { title: "HORA", field: "hora" },
+                      { title: "FECHA", field: "fecha" },
                       { title: "ESTADO", field: "estado" },
-                      { title: "SERVICIO", field: "servicio_id" },
                     ]}
                     data={this.state.dataDescription}
                     filter={true}
-                    color="#F7A440"
+                    color="#34BE82"
                   />
                 </Card.Text>
               </Card.Body>
             </Card>
           </Col>
-          <Col md={5}>
+          <Col md={4}>
             <Card>
               <Card.Header>
                 <strong>Reservas</strong>

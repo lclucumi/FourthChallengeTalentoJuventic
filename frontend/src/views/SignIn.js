@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Card, Row, Col, FormGroup, Form, Button } from "react-bootstrap";
 import {
   createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
   onAuthStateChanged,
   signOut,
 } from "firebase/auth";
@@ -30,8 +29,6 @@ function dataCreate(username, password) {
 function SignIn() {
   const [registerEmail, setRegisterEmail] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
-  const [loginEmail, setLoginEmail] = useState("");
-  const [loginPassword, setLoginPassword] = useState("");
 
   const [user, setUser] = useState({});
 

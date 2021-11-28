@@ -66,7 +66,8 @@ class Services extends React.Component {
                                   <ModalService
                                     name={service.name}
                                     image={service.image}
-                                  />
+                                    id={service.id}
+                                  />{" "}
                                   <a
                                     className="btn btn-outline-warning"
                                     href="/contact"

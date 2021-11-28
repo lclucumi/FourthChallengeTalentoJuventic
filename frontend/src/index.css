@@ -159,7 +159,7 @@ header .car-icon {
 #menu {
   padding: 104px 0 80px 0;
   width: 100%;
-  background-image: url("../src/images/menu/menu-bg.png");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/menu%2Fmenu-bg.png?alt=media&token=e88a5952-eab5-4f8b-8c5c-f53728d1ff5f");
 }
 
 #menu i {
@@ -283,7 +283,7 @@ h3 {
 }
 
 #destacados .image-bg {
-  background-image: url("../src/images/feature-bg.png");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/feature-bg.png?alt=media&token=8dee7204-fc1c-41d4-b22d-b03cc1464c92");
   padding-bottom: 30px;
 }
 
@@ -419,7 +419,7 @@ h2 {
 
 #testimonio .carousel-item {
   background: linear-gradient(rgba(14, 13, 13, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../src/images/testimonials-bg.jpg");
+    url("https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/testimonials-bg.jpg?alt=media&token=3a5b8336-9dd7-4255-9f30-eef02c0fdf9c");
 }
 
 /*--------------------------------------------------------------
@@ -427,7 +427,7 @@ h2 {
 --------------------------------------------------------------*/
 #eventos-section {
   background: linear-gradient(rgba(14, 13, 13, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../src/images/events-bg.jpg");
+    url("https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/events-bg.jpg?alt=media&token=6e4b770c-0be8-449f-be24-d789bc7820b5");
   padding-bottom: 80px;
   color: #fff;
 }
@@ -477,7 +477,7 @@ h3 {
 # Sección de eventos inicio
 --------------------------------------------------------------*/
 #events .image-bg-service {
-  background-image: url("../src/images/events-bg-index.png");
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/events-bg-index.png?alt=media&token=c27bc283-0126-4685-89cc-cba87dc9ea89");
   padding-top: 20px;
 }
 

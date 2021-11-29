@@ -1,7 +1,8 @@
 import React from "react";
 import { Card, Row, Col, Button, Form, Tab, Tabs } from "react-bootstrap";
 import BasicFiltering from "../ServiceComponents/table";
-
+import NotificationAlert from "react-notification-alert";
+import { showAlert, notificationAlert } from "../alertComponent/notificacions";
 class ManagerSiteEmpleado extends React.Component {
   constructor(props) {
     super(props);
@@ -50,7 +51,7 @@ class ManagerSiteEmpleado extends React.Component {
         console.log(response);
       })
       .then(() => {
-        alert("¡Trabajador eliminado!");
+        showAlert("eliminado", "¡Trabajador eliminado!");
       })
       .catch((error) => console.log(error));
   }
@@ -74,7 +75,7 @@ class ManagerSiteEmpleado extends React.Component {
         console.log(response);
       })
       .then(() => {
-        alert("¡Trabajador creado! :D");
+        showAlert("creado", "¡Trabajador creado! :D");
       })
       .catch((error) => console.log(error));
   }
@@ -99,7 +100,7 @@ class ManagerSiteEmpleado extends React.Component {
         console.log(response);
       })
       .then((data) => {
-        alert("¡Trabajador editado! :D");
+        showAlert("editado", "¡Trabajador eliminado! :D");
       })
       .catch((error) => console.log(error));
   };
@@ -123,6 +124,7 @@ class ManagerSiteEmpleado extends React.Component {
     return (
       <>
         <Row className="justify-content-md-center">
+          <NotificationAlert ref={notificationAlert} />
           <Col md={1}></Col>
           <Col md={5}>
             <Card>

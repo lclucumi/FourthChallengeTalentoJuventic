@@ -1,4 +1,9 @@
 import React from "react";
+import NotificationAlert from "react-notification-alert";
+import {
+  showAlert,
+  notificationAlert,
+} from "../views/alertComponent/notificacions";
 class Header extends React.Component {
   emptyCar(e) {
     e.preventDefault();
@@ -18,7 +23,7 @@ class Header extends React.Component {
   orderProcess(e) {
     e.preventDefault();
     if (this.obtainProductsLocalStorage().length === 0) {
-      window.alert("No hay productos en el carrito");
+      showAlert("editado", "No hay productos en el carrito");
     } else {
       window.location.href = "/buy";
     }
@@ -107,6 +112,7 @@ class Header extends React.Component {
     return (
       <>
         <header>
+          <NotificationAlert ref={notificationAlert} />
           <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
             <div className="container-fluid">
               <a className="navbar-brand" href="/">

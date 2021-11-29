@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Modal, Row, Col, Form } from "react-bootstrap";
 import emailjs from "emailjs-com";
+import NotificationAlert from "react-notification-alert";
+import { showAlert, notificationAlert } from "../alertComponent/notificacions";
 
 function dataCreate(
   service,
@@ -36,7 +38,7 @@ function dataCreate(
       console.log(response);
     })
     .then(() => {
-      alert("¡Reserva creada! :D");
+      showAlert("creado", "¡Reserva creada! :D");
     })
     .catch((error) => console.log(error));
 }
@@ -62,7 +64,7 @@ export default function InfoModal(props) {
       .then(
         () => {
           btn.value = "Reservar";
-          alert("Reservado!");
+          showAlert("creado", "¡Reservado!");
           dataCreate(
             data.id,
             nombre_res,
@@ -102,6 +104,7 @@ export default function InfoModal(props) {
       </a>
 
       <Modal show={show} onHide={handleClose} centered>
+        <NotificationAlert ref={notificationAlert} />
         <Modal.Header closeButton>
           <Modal.Title>
             <h5 className="modal-title" id="exampleModalLabel">

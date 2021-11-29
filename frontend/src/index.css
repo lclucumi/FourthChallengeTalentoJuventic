@@ -38,6 +38,14 @@ header .car-icon {
   font-size: 28px;
   padding-right: 22px;
 }
+
+#alert,
+span {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  size: 9px;
+  color: #0c0b0b;
+}
 /*--------------------------------------------------------------
 # Sección de inicio
 --------------------------------------------------------------*/

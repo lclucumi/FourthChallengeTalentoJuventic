@@ -2,6 +2,11 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import emailjs from "emailjs-com";
+import NotificationAlert from "react-notification-alert";
+import {
+  showAlert,
+  notificationAlert,
+} from "../views/alertComponent/notificacions";
 class Buy extends React.Component {
   constructor(props) {
     super(props);
@@ -102,10 +107,34 @@ class Buy extends React.Component {
     localStorage.clear();
   }
 
+  dataCreate(title, amount, id, email, date_pedido) {
+    fetch("http://localhost:5016/api/Pedido", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
+      body: JSON.stringify({
+        title: title,
+        amount: amount,
+        plato_id: id,
+        email: email,
+        date_pedido: date_pedido,
+      }),
+    })
+      .then((response) => {
+        response.json();
+        console.log(response);
+      })
+      .catch((error) => console.log(error));
+  }
+
   purchaseProcess(e) {
+    const hoy = new Date();
     e.preventDefault();
     if (this.obtainProductsLocalStorage().length === 0) {
-      window.alert(
+      showAlert(
+        "editado",
         "No se puede realizar la compra porque no hay productos seleccionados"
       );
       window.location.href = "/menu";
@@ -113,12 +142,13 @@ class Buy extends React.Component {
       document.getElementById("client").value === "" ||
       document.getElementById("address").value === ""
     ) {
-      window.alert("Por favor, diligencie todos los campos");
+      showAlert("editado", "Por favor, diligencia todos los campos");
     } else {
       const loadingGif = document.querySelector("#load");
       loadingGif.style.display = "block";
       const send = document.createElement("img");
-      send.src = "../images/mail.gif";
+      send.src =
+        "https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/mail.gif?alt=media&token=f19bd594-9167-42dc-a1f9-24e84867908a";
       send.id = "mailImage";
       let productsLS, product;
       productsLS = JSON.parse(localStorage.getItem("productos"));
@@ -128,12 +158,19 @@ class Buy extends React.Component {
           JSON.stringify(
             `Plato: ${productLS.titulo} Precio: ${productLS.precio} Cantidad: ${productLS.cantidad}`
           );
+        this.dataCreate(
+          productLS.titulo,
+          productLS.cantidad,
+          productLS.id,
+          document.getElementById("client").value,
+          hoy
+        );
       });
       product = product.replace("undefined", "");
       emailjs
         .send(
-          "service_2xj4c8l",
-          "template_fqv6ixm",
+          "service_dxswoo3",
+          "template_mlm662d",
           {
             addressee: document.getElementById("client").value,
             products: product,
@@ -149,15 +186,17 @@ class Buy extends React.Component {
             setTimeout(() => {
               send.remove();
               localStorage.clear();
-              alert(
-                "Pedido registrado exitosamente\n Revisa el correo diligenciado, por favor"
+              showAlert(
+                "creado",
+                "¡Pedido registrado exitosamente! Revisa el correo diligenciado, por favor"
               );
               window.location = "/menu";
             }, 2000);
           },
           function (err) {
-            alert(
-              "Falló el envío del email\r\n Respuesta:\n " + JSON.stringify(err)
+            showAlert(
+              "editado",
+              "¡Falló el envío del email! Respuesta:\n " + JSON.stringify(err)
             );
           }
         );
@@ -200,6 +239,7 @@ class Buy extends React.Component {
           }}
         />
         <section id="buy">
+          <NotificationAlert ref={notificationAlert} />
           <div className="container">
             <div className="row mt-3">
               <div className="col">
@@ -295,7 +335,10 @@ class Buy extends React.Component {
                   </div>
 
                   <div className="row justify-content-center" id="loaders">
-                    <img id="load" src="../images/load.gif" />
+                    <img
+                      id="load"
+                      src="https://firebasestorage.googleapis.com/v0/b/fourthchallengejuventic.appspot.com/o/load.gif?alt=media&token=a56af775-6034-4b7e-91f5-ff8585ea15a8"
+                    />
                   </div>
 
                   <div className="row justify-content-between">

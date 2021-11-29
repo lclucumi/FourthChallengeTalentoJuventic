@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Row, Col, Button, Form } from "react-bootstrap";
-
+import NotificationAlert from "react-notification-alert";
+import { showAlert, notificationAlert } from "../alertComponent/notificacions";
 class ManagerText extends React.Component {
   constructor(props) {
     super(props);
@@ -55,7 +56,7 @@ class ManagerText extends React.Component {
         console.log(response);
       })
       .then((data) => {
-        alert("¡Información editada! :D");
+        showAlert("editado", "¡Información editada! :D");
       })
       .catch((error) => console.log(error));
   };
@@ -70,6 +71,7 @@ class ManagerText extends React.Component {
     return (
       <>
         <Row className="justify-content-md-center">
+          <NotificationAlert ref={notificationAlert} />
           <Col md={3}></Col>
           <Col md={6}>
             <Card>

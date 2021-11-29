@@ -5,6 +5,11 @@ import {
   onAuthStateChanged,
   signOut,
 } from "firebase/auth";
+import NotificationAlert from "react-notification-alert";
+import {
+  showAlert,
+  notificationAlert,
+} from "../views/alertComponent/notificacions";
 import { auth } from "./firebase-config";
 
 function dataCreate(username, password) {
@@ -43,11 +48,11 @@ function SignIn() {
         registerEmail,
         registerPassword
       );
-      alert("¡Se ha registrado exitosamente!", auth);
+      showAlert("creado", "¡Se ha registrado exitosamente!");
       dataCreate(registerEmail, registerPassword);
       window.location.href = "/login";
     } catch (error) {
-      alert("¡Error! Verifica tus datos");
+      showAlert("editado", "¡Error! Verifica tus datos");
     }
   };
 
@@ -58,6 +63,7 @@ function SignIn() {
   return (
     <div className="content" id="registerCard">
       <Row className="justify-content-center">
+        <NotificationAlert ref={notificationAlert} />
         <Col md="4">
           <Card>
             <Card.Header id="headerLogin">Registro</Card.Header>

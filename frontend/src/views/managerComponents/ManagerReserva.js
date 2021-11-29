@@ -1,7 +1,8 @@
 import React from "react";
 import { Card, Row, Col, Button, Form } from "react-bootstrap";
 import BasicFiltering from "../ServiceComponents/table";
-
+import NotificationAlert from "react-notification-alert";
+import { showAlert, notificationAlert } from "../alertComponent/notificacions";
 class ManagerReserva extends React.Component {
   constructor(props) {
     super(props);
@@ -105,7 +106,7 @@ class ManagerReserva extends React.Component {
         console.log(response);
       })
       .then((data) => {
-        alert("¡Reserva editada! :D");
+        showAlert("editado", "¡Reserva eliminada!");
       })
       .catch((error) => console.log(error));
   };
@@ -137,6 +138,7 @@ class ManagerReserva extends React.Component {
     return (
       <>
         <Row className="justify-content-md-center">
+          <NotificationAlert ref={notificationAlert} />
           <Col md={1}></Col>
           <Col md={6}>
             <Card>

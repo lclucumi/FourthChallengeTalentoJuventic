@@ -5,6 +5,11 @@ import {
   onAuthStateChanged,
   signOut,
 } from "firebase/auth";
+import NotificationAlert from "react-notification-alert";
+import {
+  showAlert,
+  notificationAlert,
+} from "../views/alertComponent/notificacions";
 import { auth } from "./firebase-config";
 
 function SignIn() {
@@ -25,10 +30,10 @@ function SignIn() {
         loginPassword
       );
       if (loginEmail == "luz.lucumi@correounivalle.edu.co") {
-        alert("¡Bienvenido gerente!");
+        showAlert("creado", "¡Bienvenido gerente!");
         window.location.href = "/Manager";
       } else {
-        alert("¡Bienvenido!");
+        showAlert("creado", "¡Bienvenido!");
         window.location.href = "/";
       }
     } catch (error) {
@@ -43,6 +48,7 @@ function SignIn() {
     <>
       <div className="content" id="loginCard">
         <Row className="justify-content-center">
+          <NotificationAlert ref={notificationAlert} />
           <Col md="4">
             <Card>
               <Card.Header id="headerLogin">Login </Card.Header>

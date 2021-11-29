@@ -1,7 +1,8 @@
 import React from "react";
 import { Card, Row, Col, Button, Form, Tab, Tabs } from "react-bootstrap";
 import BasicFiltering from "../ServiceComponents/table";
-
+import NotificationAlert from "react-notification-alert";
+import { showAlert, notificationAlert } from "../alertComponent/notificacions";
 class ManagerSiteComentario extends React.Component {
   constructor(props) {
     super(props);
@@ -51,7 +52,7 @@ class ManagerSiteComentario extends React.Component {
         console.log(response);
       })
       .then((data) => {
-        alert("¡Comentario eliminado!");
+        showAlert("eliminado", "¡Comentario eliminado!");
       })
       .catch((error) => console.log(error));
   }
@@ -70,6 +71,7 @@ class ManagerSiteComentario extends React.Component {
     return (
       <>
         <Row className="justify-content-md-center">
+          <NotificationAlert ref={notificationAlert} />
           <Col md={1}></Col>
           <Col md={5}>
             <Card>

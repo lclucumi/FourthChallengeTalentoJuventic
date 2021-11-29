@@ -2,7 +2,11 @@ import React from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 import { Form, Button, Col, Row, FloatingLabel, Card } from "react-bootstrap";
-
+import NotificationAlert from "react-notification-alert";
+import {
+  showAlert,
+  notificationAlert,
+} from "../views/alertComponent/notificacions";
 class ManagerText extends React.Component {
   constructor(props) {
     super(props);
@@ -25,7 +29,8 @@ class ManagerText extends React.Component {
       .catch((error) => console.log(error));
   }
 
-  dataCreate(name, email, message, valor) {
+  dataCreate(e, name, email, message, valor) {
+    e.preventDefault();
     console.log(valor);
     fetch("http://localhost:5016/api/Comentario", {
       method: "POST",
@@ -45,7 +50,7 @@ class ManagerText extends React.Component {
         console.log(response);
       })
       .then((data) => {
-        alert("¡Comentario creado! :D");
+        showAlert("creado", "¡Comentario creado! :D");
       })
       .catch((error) => console.log(error));
   }
@@ -65,6 +70,7 @@ class ManagerText extends React.Component {
             </h2>
           </div>
           <Row>
+            <NotificationAlert ref={notificationAlert} />
             <Col md={2}></Col>
             <Col md={8}>
               <Form>
@@ -124,8 +130,9 @@ class ManagerText extends React.Component {
                 <Button
                   variant="outline-warning"
                   type="submit"
-                  onClick={() =>
+                  onClick={(e) =>
                     this.dataCreate(
+                      e,
                       document.getElementById("nombre").value,
                       document.getElementById("email").value,
                       document.getElementById("message").value,
